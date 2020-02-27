@@ -1,0 +1,28 @@
+﻿namespace Fanex.NAP.Core.Criteria.Misc
+{
+    using Fanex.Data.Repository;
+    using System;
+
+    /// <summary>
+    /// Execute SP log criteria.
+    /// </summary>
+    public class LogExecSpCriteria : CriteriaBase
+    {
+        public int CurrentUserId { get; set; }
+
+        public int CurrentSiteId { get; set; }
+
+        public DateTime LogDate { get; set; }
+
+        public string LoginIp { get; set; }
+
+        /// <summary>
+        /// Check data constraints.
+        /// </summary>
+        /// <returns>True: valid; False: invalid.</returns>
+        public override bool IsValid()
+        {
+            return true;
+        }
+    }
+}

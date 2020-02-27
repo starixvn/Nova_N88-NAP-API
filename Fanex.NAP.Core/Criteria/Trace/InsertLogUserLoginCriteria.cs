@@ -1,0 +1,49 @@
+﻿namespace Fanex.NAP.Core.Criteria.Trace
+{
+    using Fanex.Data.Repository;
+    using System;
+
+    /// <summary>
+    /// Insert log user login criteria.
+    /// </summary>
+    public class InsertLogUserLoginCriteria : CriteriaBase
+    {
+        public int UserId { get; set; }
+
+        public int SiteId { get; set; }
+
+        public string IP { get; set; }
+
+        public DateTime LogDate { get; set; }
+
+        public string Doing { get; set; }
+
+        public string DomainName { get; set; }
+
+        public string BrowserName { get; set; }
+
+        public string Platform { get; set; }
+
+        public string CountryCode { get; set; }
+
+        public int Duration { get; set; }
+
+        /// <summary>
+        /// Check data constraints.
+        /// </summary>
+        /// <returns>True: valid; False: invalid.</returns>
+        public override bool IsValid()
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// Get setting key.
+        /// </summary>
+        /// <returns>Setting key.</returns>
+        public override string GetSettingKey()
+        {
+            return "NAP_LogUserLogin_Insert";
+        }
+    }
+}
