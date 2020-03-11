@@ -1,9 +1,9 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
-    using Data.Repository;
     using System.Collections.Generic;
     using System.Text;
     using System.Web.Mvc;
+    using Data.Repository;
 
     /// <summary>
     /// Check user by username group site criteria.
@@ -15,6 +15,8 @@ namespace Fanex.NAP.Core.Criteria.User
         public string Username { get; set; }
 
         public int GroupId { get; set; }
+
+        public bool ExcludeLicenseeUser { get; set; } = true;
 
         /// <summary>
         /// Gets site list string.

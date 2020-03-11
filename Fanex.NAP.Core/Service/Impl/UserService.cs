@@ -65,18 +65,19 @@
         /// </summary>
         /// <param name="username">The username.</param>
         /// <returns>The user object.</returns>
-        public IUser GetByUsername(string username)
+        public IUser GetByUsername(string username, bool isLicenseeUser = true)
         {
             Check.Argument.IsNotEmpty(username, "username");
 
             var criteria = new GetByUsernameUserCriteria
             {
-                Username = username
+                Username = username,
+                IsLicenseeUser = isLicenseeUser
             };
 
             if (criteria.IsValid())
             {
-                return this._userRepository.Get(criteria);
+                return _userRepository.Get(criteria);
             }
 
             return null;
@@ -614,7 +615,6 @@
 
             return null;
         }
-
 
         /// <summary>
         /// Get user list site function key policy.

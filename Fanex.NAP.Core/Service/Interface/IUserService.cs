@@ -16,7 +16,7 @@
     {
         IUser GetById(int id);
 
-        IUser GetByUsername(string username);
+        IUser GetByUsername(string username, bool isLicenseeUser = true);
 
         bool CheckUsernameExist(string username);
 

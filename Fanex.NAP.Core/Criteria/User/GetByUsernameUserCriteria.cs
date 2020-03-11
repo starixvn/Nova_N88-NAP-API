@@ -9,6 +9,8 @@ namespace Fanex.NAP.Core.Criteria.User
     {
         public string Username { get; set; }
 
+        public bool IsLicenseeUser { get; set; }
+
         /// <summary>
         /// Get setting key.
         /// </summary>

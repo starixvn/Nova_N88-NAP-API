@@ -1,8 +1,8 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
+    using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
     using Fanex.NAP.Core.Web;
-    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Update customer criteria.

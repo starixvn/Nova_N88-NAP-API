@@ -1,8 +1,8 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
+    using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
     using Fanex.NAP.Core.Web;
-    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Insert new customer criteria.
@@ -50,7 +50,8 @@ namespace Fanex.NAP.Core.Criteria.User
         [Display(Name = "Group", ResourceType = typeof(ViewResources))]
         public int GroupId { get; set; }
 
-        [SpParam(Ignored = true)]
+        public bool IsLicenseeUser { get; set; }
+
         public int SiteId { get; set; }
 
         [SpParam(Ignored = true)]

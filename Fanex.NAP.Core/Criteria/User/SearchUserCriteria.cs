@@ -23,6 +23,8 @@ namespace Fanex.NAP.Core.Criteria.User
 
         public string Environment { get; set; }
 
+        public bool ExcludeLicenseeUser { get; set; } = true;
+
         /// <summary>
         /// Get setting key.
         /// </summary>
