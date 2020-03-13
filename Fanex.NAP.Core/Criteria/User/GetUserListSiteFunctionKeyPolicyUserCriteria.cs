@@ -1,9 +1,9 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
     using System.Collections.Generic;
     using System.Text;
     using System.Web.Mvc;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Get user list site function key policy criteria.
@@ -54,7 +54,7 @@ namespace Fanex.NAP.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_GetUserListSiteFunctionKeyPolicy";
+            return "N88_User_GetUserListSiteFunctionKeyPolicy";
         }
 
         /// <summary>

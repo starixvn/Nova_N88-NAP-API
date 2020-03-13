@@ -19,7 +19,7 @@ namespace Fanex.NAP.Core.Criteria.Group
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Group_SearchExcludeFunction";
+            return "N88_Group_SearchExcludeFunction";
         }
 
         /// <summary>

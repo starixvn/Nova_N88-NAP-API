@@ -1,7 +1,7 @@
 ﻿namespace Fanex.NAP.Core.Criteria.MenuItem
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Update menu item status criteria.
@@ -22,7 +22,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_MenuItem_UpdateStatus";
+            return "N88_MenuItem_UpdateStatus";
         }
 
         /// <summary>

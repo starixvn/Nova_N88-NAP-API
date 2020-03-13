@@ -17,7 +17,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_ReCheckIn";
+            return "N88_User_ReCheckIn";
         }
 
         /// <summary>

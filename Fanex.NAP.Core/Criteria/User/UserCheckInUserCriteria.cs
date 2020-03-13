@@ -1,7 +1,7 @@
 ﻿namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Check in user criteria.
@@ -44,7 +44,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_CheckIn";
+            return "N88_User_CheckIn";
         }
 
         /// <summary>

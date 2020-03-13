@@ -1,9 +1,9 @@
 namespace Fanex.NAP.Core.Criteria.Group
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System;
     using System.ComponentModel.DataAnnotations;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Insert new group criteria.
@@ -42,7 +42,7 @@ namespace Fanex.NAP.Core.Criteria.Group
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Group_Insert";
+            return "N88_Group_Insert";
         }
 
         /// <summary>

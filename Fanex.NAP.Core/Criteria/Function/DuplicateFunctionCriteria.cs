@@ -1,10 +1,10 @@
 ﻿namespace Fanex.NAP.Core.Criteria.Function
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
     using Fanex.NAP.Core.Business;
     using Fanex.NAP.Core.Web;
-    using System;
-    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Duplicate function criteria.
@@ -85,7 +85,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Function_Duplicate";
+            return "N88_Function_Duplicate";
         }
 
         /// <summary>

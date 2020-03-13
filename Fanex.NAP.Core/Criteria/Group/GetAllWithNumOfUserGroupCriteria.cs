@@ -1,8 +1,8 @@
 namespace Fanex.NAP.Core.Criteria.Group
 {
+    using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
     using Fanex.NAP.Core.Web;
-    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Get all group with number of user criteria.
@@ -25,7 +25,7 @@ namespace Fanex.NAP.Core.Criteria.Group
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Group_GetAllWithNumOfUser";
+            return "N88_Group_GetAllWithNumOfUser";
         }
 
         /// <summary>

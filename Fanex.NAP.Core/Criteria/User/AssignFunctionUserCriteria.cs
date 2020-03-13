@@ -1,10 +1,10 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Text;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Assign permission to user criteria.
@@ -78,7 +78,7 @@ namespace Fanex.NAP.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_AssignFunction";
+            return "N88_User_AssignFunction";
         }
 
         /// <summary>

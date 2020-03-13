@@ -1,7 +1,7 @@
 ﻿namespace Fanex.NAP.Core.Criteria.Trace
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Insert log user login criteria.
@@ -43,7 +43,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_LogUserLogin_Insert";
+            return "N88_LogUserLogin_Insert";
         }
     }
 }

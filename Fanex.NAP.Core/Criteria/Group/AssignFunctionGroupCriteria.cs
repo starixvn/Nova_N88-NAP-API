@@ -1,10 +1,10 @@
 ﻿namespace Fanex.NAP.Core.Criteria.Group
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Text;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Assign permission to group criteria.
@@ -69,7 +69,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Group_AssignFunction";
+            return "N88_Group_AssignFunction";
         }
 
         /// <summary>

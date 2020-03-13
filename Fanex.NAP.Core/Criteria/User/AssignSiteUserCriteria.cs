@@ -1,7 +1,7 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Assign site to user criteria.
@@ -24,7 +24,7 @@ namespace Fanex.NAP.Core.Criteria.User
 
         public override string GetSettingKey()
         {
-            return "NAP_User_AssignNewSite";
+            return "N88_User_AssignNewSite";
         }
 
         public override bool IsValid()

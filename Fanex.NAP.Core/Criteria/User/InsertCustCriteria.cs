@@ -66,7 +66,7 @@ namespace Fanex.NAP.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Cust_Insert";
+            return "N88_Cust_Insert";
         }
 
         /// <summary>

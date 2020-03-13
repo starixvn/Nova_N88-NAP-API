@@ -1,7 +1,7 @@
 namespace Fanex.NAP.Core.Criteria.Group
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Update group status criteria.
@@ -22,7 +22,7 @@ namespace Fanex.NAP.Core.Criteria.Group
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Group_UpdateStatus";
+            return "N88_Group_UpdateStatus";
         }
 
         /// <summary>

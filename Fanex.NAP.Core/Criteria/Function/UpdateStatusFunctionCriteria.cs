@@ -1,7 +1,7 @@
 ﻿namespace Fanex.NAP.Core.Criteria.Function
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Update function status criteria.
@@ -22,7 +22,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Function_UpdateStatus";
+            return "N88_Function_UpdateStatus";
         }
 
         /// <summary>

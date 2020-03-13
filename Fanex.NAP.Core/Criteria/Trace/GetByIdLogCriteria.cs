@@ -15,7 +15,7 @@ namespace Fanex.NAP.Core.Criteria.Trace
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_LogExecSp_GetById";
+            return "N88_LogExecSp_GetById";
         }
 
         /// <summary>

@@ -1,9 +1,9 @@
 ﻿namespace Fanex.NAP.Core.Criteria.Site
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System.ComponentModel.DataAnnotations;
     using System.Diagnostics.CodeAnalysis;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Insert site URL criteria.
@@ -37,7 +37,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Site_InsertSiteURL";
+            return "N88_Site_InsertSiteURL";
         }
 
         /// <summary>

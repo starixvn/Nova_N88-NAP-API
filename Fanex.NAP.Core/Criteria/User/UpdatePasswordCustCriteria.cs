@@ -1,9 +1,9 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System.ComponentModel.DataAnnotations;
     using System.Web.Mvc;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Update customer password criteria.
@@ -50,7 +50,7 @@ namespace Fanex.NAP.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Cust_UpdatePassword";
+            return "N88_Cust_UpdatePassword";
         }
 
         /// <summary>

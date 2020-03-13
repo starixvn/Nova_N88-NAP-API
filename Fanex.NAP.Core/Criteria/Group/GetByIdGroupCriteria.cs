@@ -15,7 +15,7 @@ namespace Fanex.NAP.Core.Criteria.Group
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Group_GetById";
+            return "N88_Group_GetById";
         }
 
         /// <summary>

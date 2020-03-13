@@ -1,7 +1,7 @@
 ﻿namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// SSO get time user criteria.
@@ -16,7 +16,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_SSOGetTime";
+            return "N88_User_SSOGetTime";
         }
 
         /// <summary>

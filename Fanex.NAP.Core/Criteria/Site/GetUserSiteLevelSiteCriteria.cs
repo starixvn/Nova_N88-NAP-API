@@ -17,7 +17,7 @@ namespace Fanex.NAP.Core.Criteria.Site
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Site_GetUserSiteLevel";
+            return "N88_Site_GetUserSiteLevel";
         }
 
         /// <summary>

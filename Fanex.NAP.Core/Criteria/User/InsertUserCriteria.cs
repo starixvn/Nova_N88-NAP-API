@@ -1,7 +1,7 @@
 namespace Fanex.NAP.Core.Criteria.User
 {
-    using Fanex.Data.Repository;
     using System;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Insert new user criteria.
@@ -22,7 +22,7 @@ namespace Fanex.NAP.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_Insert";
+            return "N88_User_Insert";
         }
 
         /// <summary>

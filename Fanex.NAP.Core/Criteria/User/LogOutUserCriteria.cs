@@ -15,7 +15,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_Logout";
+            return "N88_User_Logout";
         }
 
         /// <summary>

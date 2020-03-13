@@ -13,7 +13,7 @@
 
         public override string GetSettingKey()
         {
-            return "NAP_Site_GetSiteKey";
+            return "N88_Site_GetSiteKey";
         }
     }
 }

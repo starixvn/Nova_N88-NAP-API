@@ -68,7 +68,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_MenuItem_Insert";
+            return "N88_MenuItem_Insert";
         }
 
         /// <summary>

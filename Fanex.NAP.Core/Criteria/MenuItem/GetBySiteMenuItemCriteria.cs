@@ -1,8 +1,8 @@
 ﻿namespace Fanex.NAP.Core.Criteria.MenuItem
 {
+    using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
     using Fanex.NAP.Core.Web;
-    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Get menu item by site criteria.
@@ -24,7 +24,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_MenuItem_GetBySite";
+            return "N88_MenuItem_GetBySite";
         }
 
         /// <summary>

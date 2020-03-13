@@ -17,7 +17,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Function_GetByGroup";
+            return "N88_Function_GetByGroup";
         }
 
         /// <summary>

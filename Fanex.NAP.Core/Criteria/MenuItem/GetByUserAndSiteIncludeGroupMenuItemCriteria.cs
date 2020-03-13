@@ -19,7 +19,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_MenuItem_GetByUserAndSiteIncludeGroup";
+            return "N88_MenuItem_GetByUserAndSiteIncludeGroup";
         }
 
         /// <summary>

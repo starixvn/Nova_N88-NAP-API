@@ -1,9 +1,9 @@
 namespace Fanex.NAP.Core.Criteria.Function
 {
-    using Fanex.Data.Repository;
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using Fanex.Data.Repository;
 
     /// <summary>
     /// Assign function to group criteria.
@@ -64,7 +64,7 @@ namespace Fanex.NAP.Core.Criteria.Function
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Function_AssignFunctionToGroups";
+            return "N88_Function_AssignFunctionToGroups";
         }
 
         /// <summary>

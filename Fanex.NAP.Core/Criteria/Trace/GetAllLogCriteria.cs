@@ -1,9 +1,9 @@
 namespace Fanex.NAP.Core.Criteria.Trace
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System;
     using System.ComponentModel.DataAnnotations;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Get all log criteria.
@@ -36,7 +36,7 @@ namespace Fanex.NAP.Core.Criteria.Trace
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_LogExecSp_Search";
+            return "N88_LogExecSp_Search";
         }
 
         /// <summary>

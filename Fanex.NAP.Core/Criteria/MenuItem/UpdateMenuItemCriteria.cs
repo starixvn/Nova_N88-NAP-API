@@ -1,10 +1,10 @@
 ﻿namespace Fanex.NAP.Core.Criteria.MenuItem
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Diagnostics.CodeAnalysis;
+    using Fanex.Data.Repository;
+    using Fanex.NAP.Core.Web;
 
     /// <summary>
     /// Update menu item criteria.
@@ -70,7 +70,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_MenuItem_Update";
+            return "N88_MenuItem_Update";
         }
 
         /// <summary>

@@ -17,7 +17,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Site_GetSiteURLBySiteId";
+            return "N88_Site_GetSiteURLBySiteId";
         }
 
         /// <summary>

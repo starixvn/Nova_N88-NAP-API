@@ -15,7 +15,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_MenuItem_GetById";
+            return "N88_MenuItem_GetById";
         }
 
         /// <summary>

@@ -21,7 +21,7 @@
 
         public override string GetSettingKey()
         {
-            return "NAP_Function_GetByParentKeyAndSite";
+            return "N88_Function_GetByParentKeyAndSite";
         }
 
         public override bool IsValid()

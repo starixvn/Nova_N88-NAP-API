@@ -23,7 +23,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Site_GetAll";
+            return "N88_Site_GetAll";
         }
 
         /// <summary>

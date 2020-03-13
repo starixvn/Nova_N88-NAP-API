@@ -17,7 +17,7 @@ namespace Fanex.NAP.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_User_GetBySite";
+            return "N88_User_GetBySite";
         }
 
         /// <summary>

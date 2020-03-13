@@ -1,9 +1,9 @@
 ﻿namespace Fanex.NAP.Core.Criteria.Site
 {
+    using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
     using Fanex.NAP.Core.Business;
     using Fanex.NAP.Core.Web;
-    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// Update site criteria.
@@ -58,7 +58,7 @@
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "NAP_Site_Update";
+            return "N88_Site_Update";
         }
 
         /// <summary>
