@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
     using System.Collections;
     using System.Collections.Generic;
@@ -6,11 +6,11 @@
     using System.Linq;
     using System.Web.Mvc;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Business;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.User;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model.ValueObject;
+    using Fanex.N88.Core.Business;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.User;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model.ValueObject;
 
     public interface IUserService : IBaseService
     {

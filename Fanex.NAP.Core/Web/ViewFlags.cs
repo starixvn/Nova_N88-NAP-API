@@ -1,6 +1,6 @@
-﻿namespace Fanex.NAP.Core.Web
+﻿namespace Fanex.N88.Core.Web
 {
-    using Fanex.NAP.Core.Business;
+    using Fanex.N88.Core.Business;
 
     /// <summary>
     /// View flags.

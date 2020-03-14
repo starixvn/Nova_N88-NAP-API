@@ -1,12 +1,12 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
     using System.Collections.Generic;
     using System.Web.Mvc;
-    using Fanex.NAP.Core.Business;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Group;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model.ValueObject;
+    using Fanex.N88.Core.Business;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Group;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model.ValueObject;
 
     public interface IGroupService : IBaseService
     {

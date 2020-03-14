@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Repository.Impl
+﻿namespace Fanex.N88.Core.Repository.Impl
 {
     using System;
     using System.Collections;

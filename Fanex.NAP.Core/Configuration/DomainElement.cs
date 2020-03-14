@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Configuration
+﻿namespace Fanex.N88.Core.Configuration
 {
     using System.Configuration;
 

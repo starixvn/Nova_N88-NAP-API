@@ -1,8 +1,8 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
-    using Fanex.NAP.Core.Criteria.Trace;
-    using Fanex.NAP.Core.Model.ValueObject;
     using System.Linq;
+    using Fanex.N88.Core.Criteria.Trace;
+    using Fanex.N88.Core.Model.ValueObject;
 
     public interface ITraceService : IBaseService
     {

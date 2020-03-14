@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Web.Session
+﻿namespace Fanex.N88.Core.Web.Session
 {
     using System;
     using System.Collections.Generic;

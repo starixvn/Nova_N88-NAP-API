@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Service.Impl
+﻿namespace Fanex.N88.Core.Service.Impl
 {
     using System;
     using System.Collections;

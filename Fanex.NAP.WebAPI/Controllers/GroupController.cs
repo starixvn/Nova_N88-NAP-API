@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.WebAPI.Controllers
+﻿namespace Fanex.N88.WebAPI.Controllers
 {
     using System.Web.Http;
     using Core.Domain;

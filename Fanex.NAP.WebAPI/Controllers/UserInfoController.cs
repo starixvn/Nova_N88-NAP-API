@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.WebAPI.Controllers
+﻿namespace Fanex.N88.WebAPI.Controllers
 {
     using System.Web.Http;
     using Core.Command;
@@ -54,8 +54,10 @@
 
         private static IServiceContext InitServiceContext()
         {
-            IServiceContext serviceContext = new ServiceContext();
-            serviceContext.Ip = (new CurrentContext()).IP;
+            IServiceContext serviceContext = new ServiceContext
+            {
+                Ip = (new CurrentContext()).IP
+            };
 
             return serviceContext;
         }

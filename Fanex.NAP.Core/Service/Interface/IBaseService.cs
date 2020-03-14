@@ -1,9 +1,9 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Criteria.Misc;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
+    using Fanex.Data.Repository;
+    using Fanex.N88.Core.Criteria.Misc;
 
     public interface IBaseService
     {

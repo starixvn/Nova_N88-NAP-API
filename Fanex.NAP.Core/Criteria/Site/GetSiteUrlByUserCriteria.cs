@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Criteria.Site
+﻿namespace Fanex.N88.Core.Criteria.Site
 {
     using Fanex.Data.Repository;
 

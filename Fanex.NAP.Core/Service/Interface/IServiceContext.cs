@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
     public interface IServiceContext
     {

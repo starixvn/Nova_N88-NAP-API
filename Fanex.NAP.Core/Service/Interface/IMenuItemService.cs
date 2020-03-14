@@ -1,11 +1,11 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
-    using Fanex.NAP.Core.Business;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.MenuItem;
-    using Fanex.NAP.Core.Domain;
     using System.Collections.Generic;
     using System.Web.Mvc;
+    using Fanex.N88.Core.Business;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.MenuItem;
+    using Fanex.N88.Core.Domain;
 
     public interface IMenuItemService : IBaseService
     {

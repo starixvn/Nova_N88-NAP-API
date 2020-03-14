@@ -1,13 +1,13 @@
-﻿namespace Fanex.NAP.Core.Service.Interface
+﻿namespace Fanex.N88.Core.Service.Interface
 {
-    using Fanex.NAP.Core.Business;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Function;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model.ValueObject;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Web.Mvc;
+    using Fanex.N88.Core.Business;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Function;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model.ValueObject;
 
     public interface IFunctionService : IBaseService
     {

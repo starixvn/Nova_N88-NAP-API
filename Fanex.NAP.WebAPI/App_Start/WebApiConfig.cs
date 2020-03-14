@@ -1,8 +1,8 @@
-﻿namespace Fanex.NAP.WebAPI
+﻿namespace Fanex.N88.WebAPI
 {
     using System.Web.Http;
-    using Fanex.NAP.WebAPI.Configurations;
-    using Fanex.NAP.WebAPI.Filters;
+    using Fanex.N88.WebAPI.Configurations;
+    using Fanex.N88.WebAPI.Filters;
     using log4net.Config;
 
     public static class WebApiConfig
@@ -32,7 +32,7 @@
 
             config.Filters.Add(new GlobalExceptionFilterAttr());
 
-            if (NAPAPIConfiguration.Settings.EnableLogging)
+            if (N88APIConfiguration.Settings.EnableLogging)
             {
                 config.Filters.Add(new LogInfoFilterAttr());
                 XmlConfigurator.Configure();

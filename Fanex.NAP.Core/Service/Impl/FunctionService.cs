@@ -1,20 +1,20 @@
-﻿namespace Fanex.NAP.Core.Service.Impl
+﻿namespace Fanex.N88.Core.Service.Impl
 {
-    using Fanex.Common.Helper;
-    using Fanex.NAP.Core.Business;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Function;
-    using Fanex.NAP.Core.Criteria.Misc;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model;
-    using Fanex.NAP.Core.Model.ValueObject;
-    using Fanex.NAP.Core.Repository.Impl;
-    using Fanex.NAP.Core.Repository.Interface;
-    using Fanex.NAP.Core.Service.Interface;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Web.Mvc;
+    using Fanex.Common.Helper;
+    using Fanex.N88.Core.Business;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Function;
+    using Fanex.N88.Core.Criteria.Misc;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model;
+    using Fanex.N88.Core.Model.ValueObject;
+    using Fanex.N88.Core.Repository.Impl;
+    using Fanex.N88.Core.Repository.Interface;
+    using Fanex.N88.Core.Service.Interface;
 
     /// <summary>
     /// Function service.

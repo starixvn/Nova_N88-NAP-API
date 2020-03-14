@@ -1,9 +1,9 @@
-﻿namespace Fanex.NAP.Core.Model
+﻿namespace Fanex.N88.Core.Model
 {
-    using Domain;
-    using Web;
     using System;
     using System.ComponentModel.DataAnnotations;
+    using Domain;
+    using Web;
 
     /// <summary>
     /// User model.

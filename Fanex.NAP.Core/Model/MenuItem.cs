@@ -1,8 +1,8 @@
-﻿namespace Fanex.NAP.Core.Model
+﻿namespace Fanex.N88.Core.Model
 {
-    using Fanex.NAP.Core.Domain;
     using System;
     using System.Diagnostics.CodeAnalysis;
+    using Fanex.N88.Core.Domain;
 
     /// <summary>
     /// Menu item model.

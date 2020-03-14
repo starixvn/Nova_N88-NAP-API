@@ -1,9 +1,9 @@
-﻿namespace Fanex.NAP.Core.Repository.Impl
+﻿namespace Fanex.N88.Core.Repository.Impl
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
     using System;
     using System.Collections;
+    using Fanex.Data.Repository;
+    using Fanex.N88.Core.Command;
 
     /// <summary>
     /// Repository base.

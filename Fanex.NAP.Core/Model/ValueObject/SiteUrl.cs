@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Model.ValueObject
+﻿namespace Fanex.N88.Core.Model.ValueObject
 {
     using System.Diagnostics.CodeAnalysis;
 

@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.WebAPI
+﻿namespace Fanex.N88.WebAPI
 {
     using System.Web.Mvc;
 

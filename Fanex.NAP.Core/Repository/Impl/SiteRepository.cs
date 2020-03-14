@@ -1,18 +1,18 @@
-﻿namespace Fanex.NAP.Core.Repository.Impl
+﻿namespace Fanex.N88.Core.Repository.Impl
 {
-    using Fanex.Data;
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Misc;
-    using Fanex.NAP.Core.Criteria.Site;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model;
-    using Fanex.NAP.Core.Model.ValueObject;
-    using Fanex.NAP.Core.Repository.Interface;
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
+    using Fanex.Data;
+    using Fanex.Data.Repository;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Misc;
+    using Fanex.N88.Core.Criteria.Site;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model;
+    using Fanex.N88.Core.Model.ValueObject;
+    using Fanex.N88.Core.Repository.Interface;
 
     /// <summary>
     /// Site repository.

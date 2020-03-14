@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Command
+﻿namespace Fanex.N88.Core.Command
 {
     /// <summary>
     /// Command result.

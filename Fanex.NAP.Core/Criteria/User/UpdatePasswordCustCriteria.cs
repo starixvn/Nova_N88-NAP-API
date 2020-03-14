@@ -1,9 +1,9 @@
-namespace Fanex.NAP.Core.Criteria.User
+namespace Fanex.N88.Core.Criteria.User
 {
     using System.ComponentModel.DataAnnotations;
     using System.Web.Mvc;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
+    using Fanex.N88.Core.Web;
 
     /// <summary>
     /// Update customer password criteria.

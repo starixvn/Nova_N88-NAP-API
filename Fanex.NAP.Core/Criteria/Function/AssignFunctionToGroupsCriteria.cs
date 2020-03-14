@@ -1,4 +1,4 @@
-namespace Fanex.NAP.Core.Criteria.Function
+namespace Fanex.N88.Core.Criteria.Function
 {
     using System;
     using System.Collections.Generic;

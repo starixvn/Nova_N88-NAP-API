@@ -1,11 +1,11 @@
-﻿namespace Fanex.NAP.Core.Repository.Interface
+﻿namespace Fanex.N88.Core.Repository.Interface
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Group;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model.ValueObject;
     using System.Collections.Generic;
+    using Fanex.Data.Repository;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Group;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model.ValueObject;
 
     public interface IGroupRepository : IReadonlyRepository<IGroup>
     {

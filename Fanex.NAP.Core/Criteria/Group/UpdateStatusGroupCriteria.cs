@@ -1,4 +1,4 @@
-namespace Fanex.NAP.Core.Criteria.Group
+namespace Fanex.N88.Core.Criteria.Group
 {
     using System;
     using Fanex.Data.Repository;

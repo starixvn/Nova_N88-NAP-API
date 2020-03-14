@@ -1,9 +1,9 @@
-namespace Fanex.NAP.Core.Criteria.Trace
+namespace Fanex.N88.Core.Criteria.Trace
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
+    using Fanex.N88.Core.Web;
 
     /// <summary>
     /// Get all log user login criteria.

@@ -1,9 +1,9 @@
-﻿namespace Fanex.NAP.Core.Repository.Interface
+﻿namespace Fanex.N88.Core.Repository.Interface
 {
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.MenuItem;
-    using Fanex.NAP.Core.Domain;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.MenuItem;
+    using Fanex.N88.Core.Domain;
 
     public interface IMenuItemRepository : IReadonlyRepository<IMenuItem>
     {

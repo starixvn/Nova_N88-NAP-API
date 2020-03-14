@@ -1,12 +1,12 @@
 using System.Linq;
 using System.Web.Http;
-using Fanex.NAP.WebAPI;
+using Fanex.N88.WebAPI;
 using Swashbuckle.Application;
 using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace Fanex.NAP.WebAPI
+namespace Fanex.N88.WebAPI
 {
     public class SwaggerConfig
     {
@@ -33,7 +33,7 @@ namespace Fanex.NAP.WebAPI
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "Fanex.NAP.WebAPI");
+                        c.SingleApiVersion("v1", "Fanex.N88.WebAPI");
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //

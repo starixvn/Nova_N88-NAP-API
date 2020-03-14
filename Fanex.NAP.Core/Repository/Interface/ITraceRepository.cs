@@ -1,10 +1,10 @@
-﻿namespace Fanex.NAP.Core.Repository.Interface
+﻿namespace Fanex.N88.Core.Repository.Interface
 {
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Trace;
-    using Fanex.NAP.Core.Model.ValueObject;
     using System.Linq;
+    using Fanex.Data.Repository;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Trace;
+    using Fanex.N88.Core.Model.ValueObject;
 
     public interface ITraceRepository : IDynamicRepository
     {

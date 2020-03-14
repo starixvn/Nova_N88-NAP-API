@@ -1,4 +1,4 @@
-namespace Fanex.NAP.Core.Criteria.Trace
+namespace Fanex.N88.Core.Criteria.Trace
 {
     using Fanex.Data.Repository;
 

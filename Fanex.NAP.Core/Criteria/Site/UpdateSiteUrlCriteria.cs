@@ -1,9 +1,9 @@
-﻿namespace Fanex.NAP.Core.Criteria.Site
+﻿namespace Fanex.N88.Core.Criteria.Site
 {
     using System.ComponentModel.DataAnnotations;
     using System.Diagnostics.CodeAnalysis;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
+    using Fanex.N88.Core.Web;
 
     /// <summary>
     /// Update site URL criteria.

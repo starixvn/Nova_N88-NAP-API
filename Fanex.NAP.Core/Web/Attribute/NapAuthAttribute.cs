@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Web.Attribute
+﻿namespace Fanex.N88.Core.Web.Attribute
 {
     using System;
     using System.Web;

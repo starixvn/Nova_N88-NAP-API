@@ -1,10 +1,10 @@
-﻿namespace Fanex.NAP.Core.Web.Attribute
+﻿namespace Fanex.N88.Core.Web.Attribute
 {
-    using Fanex.NAP.Core.Web.Session;
     using System;
     using System.Web;
     using System.Web.Mvc;
     using System.Web.Security;
+    using Fanex.N88.Core.Web.Session;
 
     /// <summary>
     /// Super authorize attribute.

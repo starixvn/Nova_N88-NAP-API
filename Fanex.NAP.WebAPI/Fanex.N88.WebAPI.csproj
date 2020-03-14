@@ -191,7 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
-    <Compile Include="Configurations\NAPAPIConfiguration.cs" />
+    <Compile Include="Configurations\N88APIConfiguration.cs" />
     <Compile Include="Controllers\SSOLoginController.cs" />
     <Compile Include="Controllers\ReCheckInController.cs" />
     <Compile Include="Controllers\GroupController.cs" />
@@ -278,9 +278,9 @@
     <Content Include="Web.n88.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Fanex.NAP.Core\Fanex.NAP.Core.csproj">
+    <ProjectReference Include="..\Fanex.NAP.Core\Fanex.N88.Core.csproj">
       <Project>{2136e1d1-db76-4365-9b4f-c1ddcff376a8}</Project>
-      <Name>Fanex.NAP.Core</Name>
+      <Name>Fanex.N88.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

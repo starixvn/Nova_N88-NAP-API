@@ -1,8 +1,8 @@
-﻿namespace Fanex.NAP.Core.Criteria.MenuItem
+﻿namespace Fanex.N88.Core.Criteria.MenuItem
 {
     using System.ComponentModel.DataAnnotations;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Web;
+    using Fanex.N88.Core.Web;
 
     /// <summary>
     /// Get menu item by site criteria.

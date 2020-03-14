@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.WebAPI.Extensions
+﻿namespace Fanex.N88.WebAPI.Extensions
 {
     using System.Net;
     using System.Net.Http;

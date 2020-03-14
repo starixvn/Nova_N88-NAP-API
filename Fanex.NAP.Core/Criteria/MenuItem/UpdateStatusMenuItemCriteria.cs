@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Criteria.MenuItem
+﻿namespace Fanex.N88.Core.Criteria.MenuItem
 {
     using System;
     using Fanex.Data.Repository;

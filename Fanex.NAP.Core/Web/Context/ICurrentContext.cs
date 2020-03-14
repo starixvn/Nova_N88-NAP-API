@@ -1,6 +1,6 @@
-﻿namespace Fanex.NAP.Core.Web.Context
+﻿namespace Fanex.N88.Core.Web.Context
 {
-    using Fanex.NAP.Core.Configuration;
+    using Fanex.N88.Core.Configuration;
 
     public interface ICurrentContext
     {

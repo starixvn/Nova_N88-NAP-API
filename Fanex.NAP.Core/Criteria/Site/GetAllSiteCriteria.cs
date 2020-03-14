@@ -1,7 +1,7 @@
-﻿namespace Fanex.NAP.Core.Criteria.Site
+﻿namespace Fanex.N88.Core.Criteria.Site
 {
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Business;
+    using Fanex.N88.Core.Business;
 
     /// <summary>
     /// Get all site criteria.

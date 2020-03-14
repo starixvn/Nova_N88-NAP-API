@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Domain
+﻿namespace Fanex.N88.Core.Domain
 {
     /// <summary>
     /// Base entity.

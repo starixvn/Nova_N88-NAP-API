@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Repository.Impl
+﻿namespace Fanex.N88.Core.Repository.Impl
 {
     using System;
     using System.Collections;
@@ -8,13 +8,13 @@
     using Fanex.Common.Extensions;
     using Fanex.Data;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Misc;
-    using Fanex.NAP.Core.Criteria.User;
-    using Fanex.NAP.Core.Domain;
-    using Fanex.NAP.Core.Model;
-    using Fanex.NAP.Core.Model.ValueObject;
-    using Fanex.NAP.Core.Repository.Interface;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Misc;
+    using Fanex.N88.Core.Criteria.User;
+    using Fanex.N88.Core.Domain;
+    using Fanex.N88.Core.Model;
+    using Fanex.N88.Core.Model.ValueObject;
+    using Fanex.N88.Core.Repository.Interface;
 
     /// <summary>
     /// User repository.

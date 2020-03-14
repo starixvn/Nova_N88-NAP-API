@@ -1,15 +1,15 @@
-﻿namespace Fanex.NAP.Core.Repository.Impl
+﻿namespace Fanex.N88.Core.Repository.Impl
 {
-    using Fanex.Data;
-    using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Command;
-    using Fanex.NAP.Core.Criteria.Trace;
-    using Fanex.NAP.Core.Model;
-    using Fanex.NAP.Core.Model.ValueObject;
-    using Fanex.NAP.Core.Repository.Interface;
     using System;
     using System.Collections;
     using System.Linq;
+    using Fanex.Data;
+    using Fanex.Data.Repository;
+    using Fanex.N88.Core.Command;
+    using Fanex.N88.Core.Criteria.Trace;
+    using Fanex.N88.Core.Model;
+    using Fanex.N88.Core.Model.ValueObject;
+    using Fanex.N88.Core.Repository.Interface;
 
     /// <summary>
     /// Trace repository.

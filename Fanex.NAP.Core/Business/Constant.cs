@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Business
+﻿namespace Fanex.N88.Core.Business
 {
     using System.Diagnostics.CodeAnalysis;
 

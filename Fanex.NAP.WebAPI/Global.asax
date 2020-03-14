@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Fanex.NAP.WebAPI.MvcApplication" Language="C#" %>
+﻿<%@ Application CodeBehind="Global.asax.cs" Inherits="Fanex.N88.WebAPI.MvcApplication" Language="C#" %>

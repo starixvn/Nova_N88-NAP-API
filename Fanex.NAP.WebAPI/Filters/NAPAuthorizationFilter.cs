@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.WebAPI.Filters
+﻿namespace Fanex.N88.WebAPI.Filters
 {
     using System;
     using System.Collections.Concurrent;
@@ -18,7 +18,7 @@
 
     public class NAPAuthorizationFilter : AuthorizationFilterAttribute
     {
-        private const string CacheKey = "Fanex.NAP.WebAPI.CacheKey";
+        private const string CacheKey = "Fanex.N88.WebAPI.CacheKey";
         private const long RequestMaxAgeInSeconds = 300;
         private const string TokenAuthenticationScheme = "amx";
         private readonly ICache _cache;

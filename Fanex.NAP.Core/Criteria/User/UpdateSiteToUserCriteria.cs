@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Criteria.User
+﻿namespace Fanex.N88.Core.Criteria.User
 {
     using System;
     using Fanex.Data.Repository;

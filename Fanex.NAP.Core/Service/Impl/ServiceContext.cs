@@ -1,6 +1,6 @@
-﻿namespace Fanex.NAP.Core.Service.Impl
+﻿namespace Fanex.N88.Core.Service.Impl
 {
-    using Fanex.NAP.Core.Service.Interface;
+    using Fanex.N88.Core.Service.Interface;
 
     /// <summary>
     /// Service context.

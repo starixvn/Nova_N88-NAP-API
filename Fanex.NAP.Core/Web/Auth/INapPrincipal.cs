@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Web.Auth
+﻿namespace Fanex.N88.Core.Web.Auth
 {
     public interface INapPrincipal
     {

@@ -1,12 +1,12 @@
-﻿namespace Fanex.NAP.Core.Criteria.Site
+﻿namespace Fanex.N88.Core.Criteria.Site
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Text;
     using Fanex.Data.Repository;
-    using Fanex.NAP.Core.Business;
-    using Fanex.NAP.Core.Model.ValueObject;
-    using Fanex.NAP.Core.Web;
+    using Fanex.N88.Core.Business;
+    using Fanex.N88.Core.Model.ValueObject;
+    using Fanex.N88.Core.Web;
 
     /// <summary>
     /// Insert new site criteria.

@@ -1,13 +1,13 @@
-﻿namespace Fanex.NAP.WebAPI.Configurations
+﻿namespace Fanex.N88.WebAPI.Configurations
 {
     using System.Configuration;
 
-    public class NAPAPIConfiguration : ConfigurationSection
+    public class N88APIConfiguration : ConfigurationSection
     {
-        private static NAPAPIConfiguration settings
-            = ConfigurationManager.GetSection("NAPAPIConfiguration") as NAPAPIConfiguration;
+        private static N88APIConfiguration settings
+            = ConfigurationManager.GetSection("N88APIConfiguration") as N88APIConfiguration;
 
-        public static NAPAPIConfiguration Settings
+        public static N88APIConfiguration Settings
         {
             get
             {

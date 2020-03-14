@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Web
+﻿namespace Fanex.N88.Core.Web
 {
     /// <summary>
     /// Number Extensions.

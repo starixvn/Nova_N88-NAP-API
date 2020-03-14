@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.Core.Criteria.Function
+﻿namespace Fanex.N88.Core.Criteria.Function
 {
     /// <summary>
     /// Get function by parent criteria.

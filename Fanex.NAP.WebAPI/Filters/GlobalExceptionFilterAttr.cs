@@ -1,4 +1,4 @@
-﻿namespace Fanex.NAP.WebAPI.Filters
+﻿namespace Fanex.N88.WebAPI.Filters
 {
     using System;
     using System.Data.SqlClient;

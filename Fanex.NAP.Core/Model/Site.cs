@@ -1,7 +1,7 @@
-﻿namespace Fanex.NAP.Core.Model
+﻿namespace Fanex.N88.Core.Model
 {
-    using Fanex.NAP.Core.Domain;
     using System;
+    using Fanex.N88.Core.Domain;
 
     /// <summary>
     /// Site model.
