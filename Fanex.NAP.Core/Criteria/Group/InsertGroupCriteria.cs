@@ -36,6 +36,10 @@ namespace Fanex.NAP.Core.Criteria.Group
 
         public DateTime CreatedDate { get; set; }
 
+        public bool IsLicenseeGroup { get; set; }
+
+        public int? SiteId { get; set; }
+
         /// <summary>
         /// Get setting key.
         /// </summary>

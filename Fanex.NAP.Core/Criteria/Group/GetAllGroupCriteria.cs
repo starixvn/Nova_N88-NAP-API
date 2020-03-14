@@ -13,6 +13,11 @@ namespace Fanex.NAP.Core.Criteria.Group
         /// Get setting key.
         /// </summary>
         /// <returns>Setting key.</returns>
+
+        public bool IsLicenseeGroup { get; set; }
+
+        public int? SiteId { get; set; }
+
         public override string GetSettingKey()
         {
             return "N88_Group_GetAll";
