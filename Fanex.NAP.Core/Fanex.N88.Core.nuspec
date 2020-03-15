@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Fanex.N88.Core</id>
-    <version>1.0.1-alpha-3</version>
+    <version>1.0.1-alpha-4</version>
     <title>$title$</title>
     <authors>Oliver.Dang</authors>
     <owners>Oliver.Dang</owners>
@@ -13,8 +13,8 @@
     <dependencies>
       <group targetFramework=".NETFramework4.0" />
     </dependencies>
-    <description>Enhance get group with number of user</description>
-    <releaseNotes>The first version off N88 Core.</releaseNotes>
+    <description>Enhance Get User by Username and SiteId</description>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Fanex N88 Core</tags>
   </metadata>
