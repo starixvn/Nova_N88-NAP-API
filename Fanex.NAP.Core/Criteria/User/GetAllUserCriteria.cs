@@ -7,6 +7,10 @@ namespace Fanex.N88.Core.Criteria.User
     /// </summary>
     public class GetAllUserCriteria : CriteriaBase
     {
+        public bool IsLicenseeSite { get; set; }
+
+        public int? SiteId { get; set; }
+
         /// <summary>
         /// Get setting key.
         /// </summary>

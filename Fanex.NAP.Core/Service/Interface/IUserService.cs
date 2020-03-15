@@ -16,12 +16,12 @@
     {
         IUser GetById(int id);
 
-        IUser GetByUsername(string username, bool isLicenseeUser = true);
+        IUser GetByUsername(string username, bool isLicenseeSite = true, int? siteId);
 
         bool CheckUsernameExist(string username);
 
         [SuppressMessage("Microsoft.Design", "CA1024:UsePropertiesWhereAppropriate", Justification = "Reviewed")]
-        IEnumerable<IUser> GetAll();
+        IEnumerable<IUser> GetAll(bool isLicenseeSite = true, int? siteId = null);
 
         IEnumerable<UserPolicy> GetByFunctionAndSite(int functionId, int siteId = 0);
 

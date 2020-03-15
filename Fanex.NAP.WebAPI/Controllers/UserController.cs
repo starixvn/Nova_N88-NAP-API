@@ -37,15 +37,15 @@
         }
 
         [HttpGet]
-        public IUser Get(string username)
+        public IUser Get(string username, bool isLicenseeSite = true, int? siteId = null)
         {
-            return _userService.GetByUsername(username);
+            return _userService.GetByUsername(username, isLicenseeSite, siteId);
         }
 
         [HttpGet]
-        public IEnumerable<IUser> Get()
+        public IEnumerable<IUser> Get(bool isLicenseeSite = true, int? siteId = null)
         {
-            return _userService.GetAll();
+            return _userService.GetAll(isLicenseeSite, siteId);
         }
 
         [HttpGet]

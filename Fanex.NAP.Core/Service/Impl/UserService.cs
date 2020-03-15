@@ -65,14 +65,15 @@
         /// </summary>
         /// <param name="username">The username.</param>
         /// <returns>The user object.</returns>
-        public IUser GetByUsername(string username, bool isLicenseeUser = true)
+        public IUser GetByUsername(string username, bool isLicenseeSite = true, int? siteId = null)
         {
             Check.Argument.IsNotEmpty(username, "username");
 
             var criteria = new GetByUsernameUserCriteria
             {
                 Username = username,
-                IsLicenseeUser = isLicenseeUser
+                IsLicenseeSite = isLicenseeSite,
+                SiteId = siteId
             };
 
             if (criteria.IsValid())
@@ -99,9 +100,13 @@
         /// Get all user.
         /// </summary>
         /// <returns>The list of user object.</returns>
-        public IEnumerable<IUser> GetAll()
+        public IEnumerable<IUser> GetAll(bool isLicenseeSite = true, int? siteId = null)
         {
-            var criteria = new GetAllUserCriteria();
+            var criteria = new GetAllUserCriteria
+            {
+                IsLicenseeSite = isLicenseeSite,
+                SiteId = siteId
+            };
 
             if (criteria.IsValid())
             {
