@@ -11,7 +11,7 @@ namespace Fanex.N88.Core.Criteria.Group
 
         public bool IsLicenseeGroup { get; set; }
 
-        public int SiteId { get; set; }
+        public int? SiteId { get; set; }
 
         /// <summary>
         /// Get setting key.

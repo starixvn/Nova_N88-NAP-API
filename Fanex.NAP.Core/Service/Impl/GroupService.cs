@@ -80,13 +80,15 @@
         /// </summary>
         /// <param name="name">The group name.</param>
         /// <returns>The group object.</returns>
-        public IGroup GetByName(string name)
+        public IGroup GetByName(string name, bool isLicenseeGroup = true, int? siteId = null)
         {
             Check.Argument.IsNotEmpty(name, "name");
 
             var criteria = new GetByNameGroupCriteria
             {
-                GroupName = name
+                GroupName = name,
+                IsLicenseeGroup = isLicenseeGroup,
+                SiteId = siteId
             };
 
             if (criteria.IsValid())
@@ -157,13 +159,16 @@
         /// <param name="env">The environment.</param>
         /// <param name="isActive">Is active or not.</param>
         /// <returns>The list of group object.</returns>
-        public IEnumerable<IGroup> GetAllWithNumOfUser(string name, string env = Constant.Uat, bool? isActive = null)
+        public IEnumerable<IGroup> GetAllWithNumOfUser(string name, string env = Constant.Uat, bool? isActive = null,
+            bool isLicenseeGroup = true, int? siteId = null)
         {
             var criteria = new GetAllWithNumOfUserGroupCriteria
             {
                 IsActive = isActive,
                 GroupName = name,
-                Environment = env
+                Environment = env,
+                IsLicenseeGroup = isLicenseeGroup,
+                SiteId = siteId
             };
 
             if (criteria.IsValid())

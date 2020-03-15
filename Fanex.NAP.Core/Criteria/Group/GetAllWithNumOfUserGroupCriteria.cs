@@ -19,6 +19,10 @@ namespace Fanex.N88.Core.Criteria.Group
 
         public string Environment { get; set; }
 
+        public bool IsLicenseeGroup { get; set; }
+
+        public int? SiteId { get; set; }
+
         /// <summary>
         /// Get setting key.
         /// </summary>

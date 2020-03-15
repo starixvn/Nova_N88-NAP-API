@@ -14,7 +14,7 @@
 
         IGroup GetById(int id);
 
-        IGroup GetByName(string name);
+        IGroup GetByName(string name, bool isLicenseeGroup = true, int? siteId = null);
 
         IEnumerable<IGroup> GetAll(bool? isActive = null, bool isLicenseeGroup = true, int? siteId = null);
 
@@ -32,7 +32,8 @@
 
         IEnumerable<GroupPolicy> GetByFunctionAndSite(int functionId, int siteId = 0);
 
-        IEnumerable<IGroup> GetAllWithNumOfUser(string name, string env = Constant.Uat, bool? isActive = null);
+        IEnumerable<IGroup> GetAllWithNumOfUser(string name, string env = Constant.Uat, bool? isActive = null,
+            bool isLicenseeGroup = true, int? siteId = null);
 
         ICommandResult AssignFunction(AssignFunctionGroupCriteria criteria);
 

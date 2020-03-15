@@ -8,8 +8,8 @@
     <ProjectGuid>{2136E1D1-DB76-4365-9B4F-C1DDCFF376A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Fanex.NAP.Core</RootNamespace>
-    <AssemblyName>Fanex.NAP.Core</AssemblyName>
+    <RootNamespace>Fanex.N88.Core</RootNamespace>
+    <AssemblyName>Fanex.N88.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

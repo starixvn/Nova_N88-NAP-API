@@ -10,7 +10,7 @@
     using Service.Impl;
     using Service.Interface;
 
-    [AttributeUsageAttribute(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
     public sealed class NapAuthAttribute : AuthorizeAttribute
     {
         #region Member
