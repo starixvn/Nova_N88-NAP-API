@@ -39,7 +39,7 @@
         [HttpGet]
         public IUser Get(string username, int siteId)
         {
-            return _userService.GetByUsername(username, siteId: siteId);
+            return _userService.GetByUsername(username, siteId: siteId == 0 ? 3 : siteId);
         }
 
         [HttpGet]
