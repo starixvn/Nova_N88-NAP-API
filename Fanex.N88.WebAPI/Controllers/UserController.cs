@@ -7,7 +7,7 @@
     using Core.Model.ValueObject;
     using Core.Service.Impl;
     using Core.Service.Interface;
-    using Filters;
+    using Fanex.N88.WebAPI.Filters;
 
     [N88AuthorizationFilter]
     public class UserController : ApiController
@@ -37,15 +37,15 @@
         }
 
         [HttpGet]
-        public IUser Get(string username, bool isLicenseeSite = true, int? siteId = null)
+        public IUser Get(string username, int siteId)
         {
-            return _userService.GetByUsername(username, isLicenseeSite, siteId);
+            return _userService.GetByUsername(username, siteId: siteId);
         }
 
         [HttpGet]
-        public IEnumerable<IUser> Get(bool isLicenseeSite = true, int? siteId = null)
+        public IEnumerable<IUser> Get(int? siteId = null)
         {
-            return _userService.GetAll(isLicenseeSite, siteId);
+            return _userService.GetAll(siteId: siteId);
         }
 
         [HttpGet]
