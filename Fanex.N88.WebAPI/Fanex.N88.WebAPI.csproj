@@ -202,7 +202,7 @@
     <Compile Include="Controllers\UserInfoController.cs" />
     <Compile Include="Filters\GlobalExceptionFilterAttr.cs" />
     <Compile Include="Filters\LogInfoFilterAttr.cs" />
-    <Compile Include="Filters\NAPAuthorizationFilter.cs" />
+    <Compile Include="Filters\N88AuthorizationFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -278,7 +278,7 @@
     <Content Include="Web.n88.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Fanex.NAP.Core\Fanex.N88.Core.csproj">
+    <ProjectReference Include="..\Fanex.N88.Core\Fanex.N88.Core.csproj">
       <Project>{2136e1d1-db76-4365-9b4f-c1ddcff376a8}</Project>
       <Name>Fanex.N88.Core</Name>
     </ProjectReference>

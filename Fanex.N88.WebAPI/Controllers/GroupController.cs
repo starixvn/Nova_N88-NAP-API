@@ -6,7 +6,7 @@
     using Core.Service.Interface;
     using Filters;
 
-    [NAPAuthorizationFilter]
+    [N88AuthorizationFilter]
     public class GroupController : ApiController
     {
         private readonly IGroupService _groupService;

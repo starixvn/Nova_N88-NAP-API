@@ -142,7 +142,7 @@
     <Compile Include="Command\ICommandResult.cs" />
     <Compile Include="Configuration\DomainElement.cs" />
     <Compile Include="Configuration\DomainCollection.cs" />
-    <Compile Include="Configuration\NapSettings.cs" />
+    <Compile Include="Configuration\N88Settings.cs" />
     <Compile Include="Criteria\Function\AssignFunctionToUsersCriteria.cs" />
     <Compile Include="Criteria\Function\AssignFunctionToGroupsCriteria.cs" />
     <Compile Include="Criteria\Function\CopyPermissionCriteria.cs" />
@@ -292,11 +292,11 @@
     <Compile Include="Service\Interface\IServiceContext.cs" />
     <Compile Include="Service\Interface\ISiteService.cs" />
     <Compile Include="Service\Interface\IUserService.cs" />
-    <Compile Include="Web\Attribute\NapAuthAttribute.cs" />
-    <Compile Include="Web\Attribute\NapSuperAuthAttribute.cs" />
+    <Compile Include="Web\Attribute\N88AuthAttribute.cs" />
+    <Compile Include="Web\Attribute\N88SuperAuthAttribute.cs" />
     <Compile Include="Web\Auth\AuthInfo.cs" />
-    <Compile Include="Web\Auth\INapPrincipal.cs" />
-    <Compile Include="Web\Auth\NapPrincipal.cs" />
+    <Compile Include="Web\Auth\IN88Principal.cs" />
+    <Compile Include="Web\Auth\N88Principal.cs" />
     <Compile Include="Web\Context\CurrentContext.cs" />
     <Compile Include="Web\DateTimeExtensions.cs" />
     <Compile Include="Web\NumberExtensions.cs" />

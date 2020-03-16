@@ -11,7 +11,7 @@
         {
             this.IsLive = false;
             this.HasEditRight = false;
-            this.IsNapAdminSite = false;
+            this.IsN88AdminSite = false;
             this.HasAssignFunctionRight = false;
             this.HasAssignFunctionToUserRight = false;
             this.HasAssignFunctionToGroupRight = false;
@@ -25,7 +25,7 @@
 
         public bool HasEditRight { get; set; }
 
-        public bool IsNapAdminSite { get; set; }
+        public bool IsN88AdminSite { get; set; }
 
         public bool HasAssignSiteReadRight { get; set; }
 

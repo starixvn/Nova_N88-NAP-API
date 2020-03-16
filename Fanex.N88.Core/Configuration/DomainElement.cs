@@ -7,35 +7,35 @@
     /// </summary>
     public class DomainElement : ConfigurationElement
     {
-        private const string __NAP_DOMAIN_NAME = "Name";
+        private const string __N88_DOMAIN_NAME = "Name";
 
-        private const string __NAP_DOMAIN_PATH = "Path";
+        private const string __N88_DOMAIN_PATH = "Path";
 
-        [ConfigurationProperty(__NAP_DOMAIN_NAME, IsRequired = true)]
+        [ConfigurationProperty(__N88_DOMAIN_NAME, IsRequired = true)]
         public string Name
         {
             get
             {
-                return (string)this[__NAP_DOMAIN_NAME];
+                return (string)this[__N88_DOMAIN_NAME];
             }
 
             set
             {
-                this[__NAP_DOMAIN_NAME] = value;
+                this[__N88_DOMAIN_NAME] = value;
             }
         }
 
-        [ConfigurationProperty(__NAP_DOMAIN_PATH, IsRequired = true)]
+        [ConfigurationProperty(__N88_DOMAIN_PATH, IsRequired = true)]
         public string Path
         {
             get
             {
-                return (string)this[__NAP_DOMAIN_PATH];
+                return (string)this[__N88_DOMAIN_PATH];
             }
 
             set
             {
-                this[__NAP_DOMAIN_PATH] = value;
+                this[__N88_DOMAIN_PATH] = value;
             }
         }
     }

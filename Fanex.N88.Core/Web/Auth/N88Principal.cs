@@ -5,18 +5,18 @@
     using System.Web;
     using System.Web.Security;
 
-    public class NapPrincipal : IPrincipal
+    public class N88Principal : IPrincipal
     {
         private readonly IIdentity _identity;
         private readonly AuthInfo _authInfo;
 
-        public NapPrincipal(IIdentity identity, AuthInfo authInfo)
+        public N88Principal(IIdentity identity, AuthInfo authInfo)
         {
             this._identity = identity;
             this._authInfo = authInfo;
         }
 
-        public NapPrincipal(HttpContextBase httpContext)
+        public N88Principal(HttpContextBase httpContext)
         {
             if (httpContext == null)
             {

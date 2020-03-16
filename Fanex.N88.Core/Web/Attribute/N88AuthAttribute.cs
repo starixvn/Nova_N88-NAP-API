@@ -11,11 +11,11 @@
     using Service.Interface;
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
-    public sealed class NapAuthAttribute : AuthorizeAttribute
+    public sealed class N88AuthAttribute : AuthorizeAttribute
     {
         #region Member
 
-        private static readonly int _SiteId = NapSettings.Settings.SiteId;
+        private static readonly int _SiteId = N88Settings.Settings.SiteId;
 
         private static readonly IUserService UserService = new UserService();
 
@@ -70,11 +70,11 @@
             }
 
             // why it is null?
-            var principal = filterContext.HttpContext.User as NapPrincipal;
+            var principal = filterContext.HttpContext.User as N88Principal;
 
             if (principal == null)
             {
-                principal = new NapPrincipal(filterContext.HttpContext);
+                principal = new N88Principal(filterContext.HttpContext);
             }
 
             if (ReferenceEquals(principal, null) || ReferenceEquals(principal.AuthInfo, null))
@@ -151,7 +151,7 @@
             }
             else
             {
-                string settingUrl = NapSettings.Settings.UnauthorizeUrl;
+                string settingUrl = N88Settings.Settings.UnauthorizeUrl;
                 filterContext.Result = new RedirectResult(string.IsNullOrWhiteSpace(settingUrl) ? "~/Admin/Common/Unauthorize" : settingUrl);
             }
         }

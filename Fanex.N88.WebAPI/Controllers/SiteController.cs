@@ -8,7 +8,7 @@
     using Core.Service.Interface;
     using Filters;
 
-    [NAPAuthorizationFilter]
+    [N88AuthorizationFilter]
     public class SiteController : ApiController
     {
         private readonly ISiteService _siteService;

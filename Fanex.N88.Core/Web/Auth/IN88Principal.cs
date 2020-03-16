@@ -1,6 +1,6 @@
 ﻿namespace Fanex.N88.Core.Web.Auth
 {
-    public interface INapPrincipal
+    public interface IN88Principal
     {
         int UserId { get; set; }
 

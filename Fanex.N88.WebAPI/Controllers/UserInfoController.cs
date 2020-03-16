@@ -8,7 +8,7 @@
     using Core.Web.Context;
     using Filters;
 
-    [NAPAuthorizationFilter]
+    [N88AuthorizationFilter]
     public class UserInfoController : ApiController
     {
         private readonly IUserService _userService;

@@ -9,7 +9,7 @@
     using Core.Service.Interface;
     using Filters;
 
-    [NAPAuthorizationFilter]
+    [N88AuthorizationFilter]
     public class UserController : ApiController
     {
         private readonly IUserService _userService;

@@ -13,10 +13,10 @@
     using System.Web.Http.Controllers;
     using System.Web.Http.Filters;
     using Caching;
-    using Core.Service.Impl;
-    using Core.Service.Interface;
+    using Fanex.N88.Core.Service.Impl;
+    using Fanex.N88.Core.Service.Interface;
 
-    public class NAPAuthorizationFilter : AuthorizationFilterAttribute
+    public class N88AuthorizationFilterAttribute : AuthorizationFilterAttribute
     {
         private const string CacheKey = "Fanex.N88.WebAPI.CacheKey";
         private const long RequestMaxAgeInSeconds = 300;
@@ -24,12 +24,12 @@
         private readonly ICache _cache;
         private readonly ISiteService _siteService;
 
-        public NAPAuthorizationFilter()
+        public N88AuthorizationFilterAttribute()
             : this(null, null)
         {
         }
 
-        public NAPAuthorizationFilter(ICache cache, ISiteService siteService)
+        public N88AuthorizationFilterAttribute(ICache cache, ISiteService siteService)
         {
             _siteService = siteService ?? new SiteService();
             _cache = cache ?? CacheService.CreateInstance(CacheType.MemoryCache);

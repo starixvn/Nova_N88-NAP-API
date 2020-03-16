@@ -86,7 +86,7 @@
                 string currentDomain = HttpContext.Current.Request.Url.Authority;
                 string currentPath = HttpContext.Current.Request.ApplicationPath;
 
-                foreach (DomainElement item in NapSettings.Settings.Domains)
+                foreach (DomainElement item in N88Settings.Settings.Domains)
                 {
                     if (string.Compare(item.Name, currentDomain, StringComparison.CurrentCultureIgnoreCase) == 0
                         && string.Compare(item.Path, currentPath, StringComparison.CurrentCultureIgnoreCase) == 0)

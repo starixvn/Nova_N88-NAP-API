@@ -10,7 +10,7 @@
     /// Super authorize attribute.
     /// </summary>
     [AttributeUsageAttribute(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
-    public sealed class NapSuperAuthAttribute : AuthorizeAttribute
+    public sealed class N88SuperAuthAttribute : AuthorizeAttribute
     {
         /// <summary>
         /// Authorize action handler.

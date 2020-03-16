@@ -3,28 +3,25 @@
     using System.Configuration;
     using System.Diagnostics.CodeAnalysis;
 
-    /// <summary>
-    /// Custom configuration for NAP.
-    /// </summary>
-    public class NapSettings : ConfigurationSection
+    public class N88Settings : ConfigurationSection
     {
         #region consts
 
-        private const string __NAP_SETTINGS = "NapSettings";
+        private const string __N88_SETTINGS = "N88Settings";
         private const string __ENVIRONMENT = "Environment";
         private const string __ENABLE_DIRECT_LOGIN = "EnableDirectLogin";
         private const string __HUB_URL = "HubUrl";
         private const string __SITE_ID = "SiteId";
         private const string __ENABLE_RECHECKIN = "EnableReCheckin";
         private const string __UNAUTHORIZE_URL = "UnauthorizeUrl";
-        private const string __NAP_DOMAIN = "Domain";
-        private const string __NAP_DOMAIN__ADD = "add";
+        private const string __N88_DOMAIN = "Domain";
+        private const string __N88_DOMAIN__ADD = "add";
 
         #endregion consts
 
-        private static NapSettings _settings = ConfigurationManager.GetSection(__NAP_SETTINGS) as NapSettings;
+        private static N88Settings _settings = ConfigurationManager.GetSection(__N88_SETTINGS) as N88Settings;
 
-        public static NapSettings Settings
+        public static N88Settings Settings
         {
             get
             {
@@ -32,7 +29,7 @@
             }
         }
 
-        public bool IsNapHub
+        public bool IsN88Hub
         {
             get
             {
@@ -110,13 +107,13 @@
             set { this[__UNAUTHORIZE_URL] = value; }
         }
 
-        [ConfigurationProperty(__NAP_DOMAIN, IsDefaultCollection = false)]
-        [ConfigurationCollection(typeof(DomainCollection), AddItemName = __NAP_DOMAIN__ADD)]
+        [ConfigurationProperty(__N88_DOMAIN, IsDefaultCollection = false)]
+        [ConfigurationCollection(typeof(DomainCollection), AddItemName = __N88_DOMAIN__ADD)]
         public DomainCollection Domains
         {
             get
             {
-                var domainCollection = (DomainCollection)base[__NAP_DOMAIN];
+                var domainCollection = (DomainCollection)base[__N88_DOMAIN];
 
                 return domainCollection;
             }

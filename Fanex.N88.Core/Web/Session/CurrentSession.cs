@@ -27,7 +27,7 @@
 
         #endregion const
 
-        private readonly int _siteId = NapSettings.Settings.SiteId;
+        private readonly int _siteId = N88Settings.Settings.SiteId;
 
         public string Username
         {
