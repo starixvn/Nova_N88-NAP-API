@@ -37,15 +37,15 @@
         }
 
         [HttpGet]
-        public IUser Get(string username, int siteId)
+        public IUser Get(string username)
         {
-            return _userService.GetByUsername(username, siteId: siteId == 0 ? 3 : siteId);
+            return _userService.GetByUsername(username, siteId: 3);
         }
 
         [HttpGet]
-        public IEnumerable<IUser> Get(int? siteId = null)
+        public IEnumerable<IUser> Get()
         {
-            return _userService.GetAll(siteId: siteId);
+            return _userService.GetAll(siteId: 3);
         }
 
         [HttpGet]
