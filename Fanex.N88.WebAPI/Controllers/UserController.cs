@@ -30,11 +30,11 @@
             _functionService = functionService ?? new FunctionService();
         }
 
-        [HttpGet]
-        public IUser Get(int id)
-        {
-            return _userService.GetById(id);
-        }
+        //[HttpGet]
+        //public IUser Get(int id)
+        //{
+        //    return _userService.GetById(id);
+        //}
 
         [HttpGet]
         public IUser Get(string username)
