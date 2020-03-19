@@ -5,6 +5,8 @@
 
     public interface IMenuItem : IEntity<int, string>
     {
+        string Key { get; set; }
+
         string Description { get; set; }
 
         IMenuItem Parent { get; set; }

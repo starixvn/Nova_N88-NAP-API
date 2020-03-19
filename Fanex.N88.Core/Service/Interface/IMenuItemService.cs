@@ -11,6 +11,8 @@
     {
         IMenuItem GetById(int id);
 
+        IMenuItem GetByKeyAndSite(string key, int siteId);
+
         IMenuItem GetByNameAndSite(string name, int siteId);
 
         IEnumerable<IMenuItem> GetAll(string env = Constant.Uat, bool? isActive = null);

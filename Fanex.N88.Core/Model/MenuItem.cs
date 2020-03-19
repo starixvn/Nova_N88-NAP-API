@@ -4,15 +4,14 @@
     using System.Diagnostics.CodeAnalysis;
     using Fanex.N88.Core.Domain;
 
-    /// <summary>
-    /// Menu item model.
-    /// </summary>
     [Serializable]
     public class MenuItem : IMenuItem
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
+
+        public string Key { get; set; }
 
         public string Description { get; set; }
 

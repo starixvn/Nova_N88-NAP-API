@@ -13,9 +13,6 @@
     using Fanex.N88.Core.Repository.Interface;
     using Fanex.N88.Core.Service.Interface;
 
-    /// <summary>
-    /// Menu item service.
-    /// </summary>
     public class MenuItemService : BaseService, IMenuItemService
     {
         private readonly IMenuItemRepository _menuItemRepository;
@@ -30,11 +27,6 @@
             this._menuItemRepository = menuItemRepository ?? new MenuItemRepository();
         }
 
-        /// <summary>
-        /// Get menu item by ID.
-        /// </summary>
-        /// <param name="id">The menu item ID.</param>
-        /// <returns>The menu item object.</returns>
         public IMenuItem GetById(int id)
         {
             // check parameters
@@ -53,12 +45,26 @@
             return null;
         }
 
-        /// <summary>
-        /// Get menu item by name and site.
-        /// </summary>
-        /// <param name="name">The menu item name.</param>
-        /// <param name="siteId">The site ID.</param>
-        /// <returns>The menu item object.</returns>
+        public IMenuItem GetByKeyAndSite(string key, int siteId)
+        {
+            // check parameters
+            Check.Argument.IsNotEmpty(key, "Key");
+            Check.Argument.IsNotNegativeOrZero(siteId, "SiteId");
+
+            var criteria = new GetByKeyAndSiteMenuItemCriteria
+            {
+                MenuItemKey = key,
+                SiteId = siteId
+            };
+
+            if (criteria.IsValid())
+            {
+                return _menuItemRepository.Get(criteria);
+            }
+
+            return null;
+        }
+
         public IMenuItem GetByNameAndSite(string name, int siteId)
         {
             // check parameters
@@ -79,12 +85,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get all menu item.
-        /// </summary>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of menu item object.</returns>
         public IEnumerable<IMenuItem> GetAll(string env = Constant.Uat, bool? isActive = null)
         {
             // check parameters
@@ -104,13 +104,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get all menu item select list item.
-        /// </summary>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <param name="selectedMenuItemId">Selected menu item ID.</param>
-        /// <returns>The list of select list item.</returns>
         public IList<SelectListItem> GetAllSelectListItem(
             string env = Constant.Uat,
             bool? isActive = null,
@@ -143,13 +136,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get menu item by site.
-        /// </summary>
-        /// <param name="siteId">The site ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of menu item object.</returns>
         public IEnumerable<IMenuItem> GetBySite(int siteId, string env = Constant.Uat, bool? isActive = null)
         {
             // check parameters
@@ -171,14 +157,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get menu item select list item by site.
-        /// </summary>
-        /// <param name="siteId">The site ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <param name="selectedMenuItemId">Selected menu item ID.</param>
-        /// <returns>The list of menu item object.</returns>
         public IList<SelectListItem> GetSelectListItemBySite(
             int siteId,
             string env = Constant.Uat,
@@ -214,13 +192,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get menu item by site in hierarchy.
-        /// </summary>
-        /// <param name="siteId">The site ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of menu item object.</returns>
         public IEnumerable<IMenuItem> GetBySiteInHierarchy(int siteId, string env = Constant.Uat, bool? isActive = null)
         {
             // check parameters
@@ -244,12 +215,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get parent menu item by ID.
-        /// </summary>
-        /// <param name="id">The menu item ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <returns>The list of menu item object.</returns>
         public IEnumerable<IMenuItem> GetParentById(int id, string env = Constant.Uat)
         {
             // check parameters
@@ -269,13 +234,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get parent menu item select list item by ID.
-        /// </summary>
-        /// <param name="id">The menu item ID.</param>
-        /// <param name="selectedMenuItemId">Selected menu item ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <returns>The list of select list item.</returns>
         public IList<SelectListItem> GetParentSelectListItemById(
             int id,
             int selectedMenuItemId = 0,
@@ -308,14 +266,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get menu item by user and site include group.
-        /// </summary>
-        /// <param name="userId">The user ID.</param>
-        /// <param name="siteId">The site ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of menu item object.</returns>
         public IEnumerable<IMenuItem> GetByUserAndSiteIncludeGroup(
             int userId,
             int siteId,
@@ -342,14 +292,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Search menu item.
-        /// </summary>
-        /// <param name="menuItemName">Menu item name.</param>
-        /// <param name="siteId">The site ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of menu item object.</returns>
         public IEnumerable<IMenuItem> Search(
             string menuItemName,
             int siteId,
@@ -375,11 +317,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Insert menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult Insert(InsertMenuItemCriteria criteria)
         {
             // check parameters
@@ -395,11 +332,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Update menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult Update(UpdateMenuItemCriteria criteria)
         {
             // check parameters
@@ -415,11 +347,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Update menu item status.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult UpdateStatus(UpdateStatusMenuItemCriteria criteria)
         {
             // check parameters
@@ -435,12 +362,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Sort menu item in hierarchy.
-        /// </summary>
-        /// <param name="menuItemList">List of menu item.</param>
-        /// <param name="parentId">The parent ID.</param>
-        /// <returns>The list of menu item object.</returns>
         private IEnumerable<IMenuItem> SortMenuItemsInHierarchy(IEnumerable<IMenuItem> menuItemList, int parentId = 0)
         {
             var sortedMenuItemList = new List<IMenuItem>();

@@ -15,16 +15,8 @@
     using Interface;
     using Model;
 
-    /// <summary>
-    /// Menu item repository.
-    /// </summary>
     public class MenuItemRepository : BaseRepository<IMenuItem>, IMenuItemRepository
     {
-        /// <summary>
-        /// Get menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>Menu item object.</returns>
         public override IMenuItem Get(ICriteria criteria)
         {
             using (var db = new ObjectDb(criteria.GetSettingKey()))
@@ -37,6 +29,7 @@
                         {
                             Id = reader.ToInt("MenuItemId"),
                             Name = reader.ToString("MenuItemName"),
+                            Key = reader.ToString("MenuItemKey"),
                             Function = new Function
                             {
                                 Id = reader.ToShort("FunctionId"),
@@ -78,11 +71,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Count menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>Number of menu item.</returns>
         public override int Count(ICriteria criteria)
         {
             using (var db = new ObjectDb(criteria.GetSettingKey()))
@@ -91,11 +79,6 @@
             }
         }
 
-        /// <summary>
-        /// Fetch menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>List of menu item.</returns>
         public override IEnumerable<IMenuItem> Fetch(ICriteria criteria)
         {
             using (var db = new ObjectDb(criteria.GetSettingKey()))
@@ -110,6 +93,7 @@
                         {
                             Id = reader.ToInt("MenuItemId"),
                             Name = reader.ToString("MenuItemName"),
+                            Key = reader.ToString("MenuItemKey"),
                             Function = new Function
                             {
                                 Id = reader.ToShort("FunctionId"),
@@ -151,12 +135,6 @@
             }
         }
 
-        /// <summary>
-        /// Insert menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <param name="logCriteria">The log criteria.</param>
-        /// <returns>Command result.</returns>
         public ICommandResult Insert(InsertMenuItemCriteria criteria, ICriteria logCriteria)
         {
             // prepare SP parameters
@@ -175,12 +153,6 @@
             }
         }
 
-        /// <summary>
-        /// Update menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <param name="logCriteria">The log criteria.</param>
-        /// <returns>Command result.</returns>
         public ICommandResult Update(ICriteria criteria, ICriteria logCriteria)
         {
             // prepare SP parameters
@@ -197,12 +169,6 @@
             }
         }
 
-        /// <summary>
-        /// Delete menu item.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <param name="logCriteria">The log criteria.</param>
-        /// <returns>Command result.</returns>
         public ICommandResult Delete(ICriteria criteria, ICriteria logCriteria)
         {
             throw new NotImplementedException();

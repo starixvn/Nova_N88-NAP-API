@@ -175,6 +175,7 @@
     <Compile Include="Criteria\Group\UpdateGroupCriteria.cs" />
     <Compile Include="Criteria\Group\UpdateStatusGroupCriteria.cs" />
     <Compile Include="Criteria\Group\InsertGroupCriteria.cs" />
+    <Compile Include="Criteria\MenuItem\GetByKeyAndSiteMenuItemCriteria.cs" />
     <Compile Include="Criteria\MenuItem\GetParentByIdMenuItemCriteria.cs" />
     <Compile Include="Criteria\MenuItem\SearchAllMenuItemCriteria.cs" />
     <Compile Include="Criteria\MenuItem\UpdateStatusMenuItemCriteria.cs" />
