@@ -13,5 +13,7 @@
         string Environment { get; set; }
 
         int NumOfUser { get; set; }
+
+        bool IsLicenseeSite { get; set; }
     }
 }

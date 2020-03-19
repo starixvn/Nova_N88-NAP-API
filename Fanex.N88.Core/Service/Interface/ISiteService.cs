@@ -24,6 +24,8 @@
 
         IEnumerable<ISite> GetAvailableSitesForUser(int userId, string env = Constant.Uat, bool? isActive = null);
 
+        IEnumerable<ISite> GetAllSiteByType(GetSiteByTypeCriteria criteria);
+
         IEnumerable<ISite> GetAll(string env = Constant.Uat, bool? isActive = null);
 
         IList<SelectListItem> GetAllSelectListItem(

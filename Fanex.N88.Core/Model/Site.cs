@@ -3,9 +3,6 @@
     using System;
     using Fanex.N88.Core.Domain;
 
-    /// <summary>
-    /// Site model.
-    /// </summary>
     [Serializable]
     public class Site : ISite
     {
@@ -24,5 +21,7 @@
         public string Environment { get; set; }
 
         public int NumOfUser { get; set; }
+
+        public bool IsLicenseeSite { get; set; }
     }
 }

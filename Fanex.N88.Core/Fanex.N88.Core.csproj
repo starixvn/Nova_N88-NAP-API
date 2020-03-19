@@ -190,6 +190,7 @@
     <Compile Include="Criteria\Misc\ResultCriteria.cs" />
     <Compile Include="Criteria\Site\GetAllSiteUrlCriteria.cs" />
     <Compile Include="Criteria\Site\GetBySiteKeyCriteria.cs" />
+    <Compile Include="Criteria\Site\GetSiteByTypeCriteria.cs" />
     <Compile Include="Criteria\Site\InsertSiteUrlCriteria.cs" />
     <Compile Include="Criteria\Site\UpdateDefaultSiteUrlCriteria.cs" />
     <Compile Include="Criteria\Site\UpdateSiteUrlCriteria.cs" />

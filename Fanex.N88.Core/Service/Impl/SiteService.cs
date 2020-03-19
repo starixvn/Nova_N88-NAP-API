@@ -17,9 +17,6 @@
     using Fanex.N88.Core.Repository.Interface;
     using Fanex.N88.Core.Service.Interface;
 
-    /// <summary>
-    /// Site service.
-    /// </summary>
     public class SiteService : BaseService, ISiteService
     {
         #region members
@@ -46,11 +43,6 @@
 
         #region get
 
-        /// <summary>
-        /// Get site by ID.
-        /// </summary>
-        /// <param name="id">The site ID.</param>
-        /// <returns>The site object.</returns>
         public ISite GetById(int id)
         {
             // check parammeters
@@ -69,11 +61,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get site by name.
-        /// </summary>
-        /// <param name="name">The site name.</param>
-        /// <returns>The site object.</returns>
         public ISite GetByName(string name)
         {
             // check parammeters
@@ -110,11 +97,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get site status by ID.
-        /// </summary>
-        /// <param name="id">The site ID.</param>
-        /// <returns>True : active, false : inactive.</returns>
         public bool GetStatusById(int id)
         {
             // check parammeters
@@ -140,13 +122,6 @@
             return isActive;
         }
 
-        /// <summary>
-        /// Get site level by user.
-        /// </summary>
-        /// <param name="userId">The user ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>List of site level.</returns>
         public IEnumerable<SiteLevel> GetSiteLevelByUser(int userId, string env = Constant.Uat, bool? isActive = null)
         {
             // check parammeters
@@ -168,13 +143,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get available sites for user.
-        /// </summary>
-        /// <param name="userId">The user identity.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list site.</returns>
         public IEnumerable<ISite> GetAvailableSitesForUser(int userId, string env = Constant.Uat, bool? isActive = null)
         {
             Check.Argument.IsNotNegativeOrZero(userId, "userId");
@@ -194,12 +162,18 @@
             return null;
         }
 
-        /// <summary>
-        /// Get all site.
-        /// </summary>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of site object.</returns>
+        public IEnumerable<ISite> GetAllSiteByType(GetSiteByTypeCriteria criteria)
+        {
+            Check.Argument.IsNotNull(criteria, "criteria");
+
+            if (criteria.IsValid())
+            {
+                return this._siteRepository.Fetch(criteria).OrderBy(site => site.Name);
+            }
+
+            return null;
+        }
+
         public IEnumerable<ISite> GetAll(string env = Constant.Uat, bool? isActive = null)
         {
             Check.Argument.IsNotEmpty(env, "Environment");
@@ -218,13 +192,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get all site select list item.
-        /// </summary>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <param name="selectedSiteId">Selected site ID.</param>
-        /// <returns>The list of select list item.</returns>
         public IList<SelectListItem> GetAllSelectListItem(
             string env = Constant.Uat,
             bool? isActive = null,
@@ -256,12 +223,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get all site with number of users.
-        /// </summary>
-        /// <param name="env">The environment.</param>
-        /// <param name="isActive">Is active or not.</param>
-        /// <returns>The list of site object.</returns>
         public IEnumerable<ISite> GetAllWithNumOfUsers(string env = Constant.Uat, bool? isActive = null)
         {
             Check.Argument.IsNotEmpty(env, "Environment");
@@ -280,14 +241,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get site by user and function key include group.
-        /// </summary>
-        /// <param name="userId">The user ID.</param>
-        /// <param name="functionKey">The function key.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="policy">The function policy.</param>
-        /// <returns>The list of site object.</returns>
         public IEnumerable<ISite> GetByUserAndFunctionKeyIncludeGroup(
             int userId,
             string functionKey,
@@ -324,15 +277,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get site select list item by user and function key include group.
-        /// </summary>
-        /// <param name="userId">The user ID.</param>
-        /// <param name="functionKey">The function key.</param>
-        /// <param name="env">The environment.</param>
-        /// <param name="policy">The function policy.</param>
-        /// <param name="selectedSiteId">Selected site ID.</param>
-        /// <returns>The list of select list item.</returns>
         public IList<SelectListItem> GetSelectListItemByUserAndFunctionKeyIncludeGroup(
             int userId,
             string functionKey,
@@ -375,11 +319,6 @@
 
         #region insert/update
 
-        /// <summary>
-        /// Insert site.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult Insert(InsertSiteCriteria criteria)
         {
             // check parameters
@@ -395,11 +334,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Update site.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult Update(UpdateSiteCriteria criteria)
         {
             // check parameters
@@ -415,11 +349,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Update site status.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult UpdateStatus(UpdateStatusSiteCriteria criteria)
         {
             // check parameters
@@ -439,12 +368,6 @@
 
         #region SiteLevel services
 
-        /// <summary>
-        /// Get user site level.
-        /// </summary>
-        /// <param name="userId">The user ID.</param>
-        /// <param name="siteId">The site ID.</param>
-        /// <returns>User site level.</returns>
         public SiteLevel GetUserSiteLevel(int userId, int siteId)
         {
             Check.Argument.IsNotNegativeOrZero(userId, "userId");
@@ -468,11 +391,6 @@
 
         #region SiteUrl services
 
-        /// <summary>
-        /// Get all site URL.
-        /// </summary>
-        /// <param name="env">The environment.</param>
-        /// <returns>List of site URL.</returns>
         public IEnumerable<SiteUrl> GetAllSiteUrl(string env)
         {
             Check.Argument.IsNotEmpty(env, "Environment");
@@ -490,12 +408,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Get site URL by user.
-        /// </summary>
-        /// <param name="userId">The user ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <returns>List of site URL.</returns>
         public IEnumerable<SiteUrl> GetSiteUrlByUser(int userId, string env)
         {
             Check.Argument.IsNotNegativeOrZero(userId, "userId");
@@ -517,12 +429,6 @@
             return result;
         }
 
-        /// <summary>
-        /// Get site URL by site ID.
-        /// </summary>
-        /// <param name="siteId">The site ID.</param>
-        /// <param name="env">The environment.</param>
-        /// <returns>List of site URL.</returns>
         public IEnumerable<SiteUrl> GetSiteUrlBySiteId(int siteId, string env)
         {
             Check.Argument.IsNotNegativeOrZero(siteId, "siteId");
@@ -543,11 +449,6 @@
             return result;
         }
 
-        /// <summary>
-        /// Gets a SiteUrl by its SiteUrlId.
-        /// </summary>
-        /// <param name="siteUrlId">Site URL ID.</param>
-        /// <returns>Site URL object.</returns>
         public SiteUrl GetSiteUrlById(int siteUrlId)
         {
             Check.Argument.IsNotNegativeOrZero(siteUrlId, "siteUrlId");
@@ -567,11 +468,6 @@
             return result;
         }
 
-        /// <summary>
-        /// Update site URL.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult UpdateSiteUrl(UpdateSiteUrlCriteria criteria)
         {
             Check.Argument.IsNotNull(criteria, "criteria");
@@ -586,11 +482,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Update default site URL.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult UpdateDefaultSiteUrl(UpdateDefaultSiteUrlCriteria criteria)
         {
             Check.Argument.IsNotNull(criteria, "criteria");
@@ -605,11 +496,6 @@
             return null;
         }
 
-        /// <summary>
-        /// Insert site URL.
-        /// </summary>
-        /// <param name="criteria">The criteria.</param>
-        /// <returns>The command result.</returns>
         public ICommandResult InsertSiteUrl(InsertSiteUrlCriteria criteria)
         {
             Check.Argument.IsNotNull(criteria, "criteria");
