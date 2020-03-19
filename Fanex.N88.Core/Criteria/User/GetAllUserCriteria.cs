@@ -9,7 +9,7 @@ namespace Fanex.N88.Core.Criteria.User
     {
         public bool IsLicenseeSite { get; set; }
 
-        public int? SiteId { get; set; }
+        public int SiteId { get; set; }
 
         /// <summary>
         /// Get setting key.

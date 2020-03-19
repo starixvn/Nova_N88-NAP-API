@@ -15,5 +15,9 @@
         IUser Modifier { get; set; }
 
         DateTime ModifiedDate { get; set; }
+
+        bool IsLicenseeGroup { get; set; }
+
+        int SourceSiteId { get; set; }
     }
 }

@@ -30,22 +30,22 @@
             _functionService = functionService ?? new FunctionService();
         }
 
-        //[HttpGet]
-        //public IUser Get(int id)
-        //{
-        //    return _userService.GetById(id);
-        //}
-
         [HttpGet]
-        public IUser Get(string username)
+        public IUser Get(int id)
         {
-            return _userService.GetByUsername(username, siteId: 3);
+            return _userService.GetById(id);
         }
 
         [HttpGet]
-        public IEnumerable<IUser> Get()
+        public IUser Get(string username, int siteId, bool isLicenSite = true)
         {
-            return _userService.GetAll(siteId: 3);
+            return _userService.GetByUsername(username, isLicenSite, siteId);
+        }
+
+        [HttpGet]
+        public IEnumerable<IUser> Get(int siteId, bool isLicenceeSite)
+        {
+            return _userService.GetAll(isLicenceeSite, siteId);
         }
 
         [HttpGet]

@@ -768,4 +768,7 @@
   <data name="Copy_Permission" xml:space="preserve">
     <value>Copy Permission</value>
   </data>
+  <data name="Licensee_User" xml:space="preserve">
+    <value>Licensee User</value>
+  </data>
 </root>

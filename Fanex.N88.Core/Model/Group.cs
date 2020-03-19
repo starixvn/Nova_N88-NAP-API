@@ -26,5 +26,9 @@
         public DateTime ModifiedDate { get; set; }
 
         public int NumOfUser { get; set; }
+
+        public bool IsLicenseeGroup { get; set; }
+
+        public int SourceSiteId { get; set; }
     }
 }

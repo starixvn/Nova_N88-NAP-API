@@ -50,5 +50,9 @@
         public string Email { get; set; }
 
         public bool Closed { get; set; }
+
+        public bool IsLicenseeUser { get; set; }
+
+        public int SourceSiteId { get; set; }
     }
 }

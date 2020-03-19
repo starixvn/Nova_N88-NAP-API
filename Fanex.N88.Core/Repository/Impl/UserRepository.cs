@@ -267,7 +267,6 @@
                     reader.Close();
 
                     criteria.TotalRows = (int)db.GetParameterValue("totalrows");
-
                     return userLevelList.AsQueryable();
                 }
             }
@@ -459,6 +458,8 @@
                     LastName = reader.ToString("LastName"),
                     Username = reader.ToString("Username"),
                     Email = reader.ToString("Email"),
+                    IsLicenseeUser = reader.ToBool("IsLicenseeUser"),
+                    SourceSiteId = reader.ToInt("SourceSiteId"),
                     Password = reader.ToString("UserPwd"),
                     LastLoginDate = reader.ToDateTime("LastLoginDate"),
                     CreatedDate = reader.ToDateTime("CreatedDate"),

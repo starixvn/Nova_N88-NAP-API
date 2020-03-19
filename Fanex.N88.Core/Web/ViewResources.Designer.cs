@@ -979,6 +979,15 @@ namespace Fanex.N88.Core.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Licensee User.
+        /// </summary>
+        public static string Licensee_User {
+            get {
+                return ResourceManager.GetString("Licensee_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to List.
         /// </summary>
         public static string List {

@@ -100,7 +100,7 @@
         /// Get all user.
         /// </summary>
         /// <returns>The list of user object.</returns>
-        public IEnumerable<IUser> GetAll(bool isLicenseeSite = true, int? siteId = null)
+        public IEnumerable<IUser> GetAll(bool isLicenseeSite, int siteId)
         {
             var criteria = new GetAllUserCriteria
             {
