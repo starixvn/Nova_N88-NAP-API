@@ -27,6 +27,12 @@
             ErrorMessageResourceName = "InputLengthValidationMsg", ErrorMessageResourceType = typeof(ViewResources))]
         public string MenuItemName { get; set; }
 
+        [Display(Name = nameof(ViewResources.MenuItemKey), ResourceType = typeof(ViewResources))]
+        [StringLength(50, MinimumLength = 2,
+            ErrorMessageResourceName = nameof(ViewResources.InputLengthValidationMsg),
+            ErrorMessageResourceType = typeof(ViewResources))]
+        public string MenuItemKey { get; set; }
+
         [Display(Name = "Description", ResourceType = typeof(ViewResources))]
         [StringLength(200, MinimumLength = 0,
             ErrorMessageResourceName = "InputLengthValidationMsg", ErrorMessageResourceType = typeof(ViewResources))]

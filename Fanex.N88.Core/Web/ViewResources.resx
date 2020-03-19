@@ -771,4 +771,7 @@
   <data name="Licensee_User" xml:space="preserve">
     <value>Licensee User</value>
   </data>
+  <data name="MenuItemKey" xml:space="preserve">
+    <value>Menu Item Key</value>
+  </data>
 </root>

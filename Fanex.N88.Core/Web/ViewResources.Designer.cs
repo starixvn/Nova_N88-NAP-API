@@ -1186,6 +1186,15 @@ namespace Fanex.N88.Core.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Menu Item Key.
+        /// </summary>
+        public static string MenuItemKey {
+            get {
+                return ResourceManager.GetString("MenuItemKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modified By.
         /// </summary>
         public static string Modified_By {
