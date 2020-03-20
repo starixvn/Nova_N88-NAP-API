@@ -81,6 +81,9 @@
 
         public string SiteKey { get; set; }
 
+        [Display(Name = "LicenseeSite", ResourceType = typeof(ViewResources))]
+        public bool IsLicenseeSite { get; set; }
+
         /// <summary>
         /// Get setting key.
         /// </summary>

@@ -774,4 +774,10 @@
   <data name="MenuItemKey" xml:space="preserve">
     <value>Menu Item Key</value>
   </data>
+  <data name="Licensee_group" xml:space="preserve">
+    <value>Licensee Group</value>
+  </data>
+  <data name="Licensee_site" xml:space="preserve">
+    <value>Licensee Site</value>
+  </data>
 </root>
