@@ -5,9 +5,6 @@ namespace Fanex.N88.Core.Criteria.User
     using System.Web.Mvc;
     using Data.Repository;
 
-    /// <summary>
-    /// Check user by username group site criteria.
-    /// </summary>
     public class GetAllByUsernameGroupSiteUserCriteria : CriteriaBase
     {
         private readonly string _siteTml = "<Site SiteId='{0}'></Site>";
@@ -16,17 +13,6 @@ namespace Fanex.N88.Core.Criteria.User
 
         public int GroupId { get; set; }
 
-        public bool ExcludeLicenseeUser { get; set; } = true;
-
-        /// <summary>
-        /// Gets site list string.
-        /// </summary>
-        /// <value>
-        /// <ROOT>
-        ///     <Site SiteId="1"></Site>
-        ///     <Site SiteId="2"></Site>
-        /// </ROOT>.
-        /// </value>
         public string Site
         {
             get
@@ -60,19 +46,11 @@ namespace Fanex.N88.Core.Criteria.User
 
         public string Environment { get; set; }
 
-        /// <summary>
-        /// Get setting key.
-        /// </summary>
-        /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
             return "N88_User_GetAllByUsernameGroupSite";
         }
 
-        /// <summary>
-        /// Check data constraints.
-        /// </summary>
-        /// <returns>True: valid; False: invalid.</returns>
         public override bool IsValid()
         {
             return true;

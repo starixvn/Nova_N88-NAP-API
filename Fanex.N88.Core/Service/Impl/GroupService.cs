@@ -104,7 +104,7 @@
         /// </summary>
         /// <param name="isActive">Is active or not.</param>
         /// <returns>The list of group object.</returns>
-        public IEnumerable<IGroup> GetAll(bool? isActive = null, bool isLicenseeGroup = true, int? siteId = null)
+        public IEnumerable<IGroup> GetAll(bool? isActive = null, bool? isLicenseeGroup = null, int? siteId = null)
         {
             var criteria = new GetAllGroupCriteria
             {

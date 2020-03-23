@@ -780,4 +780,7 @@
   <data name="Licensee_site" xml:space="preserve">
     <value>Licensee Site</value>
   </data>
+  <data name="IsLicenseeSite" xml:space="preserve">
+    <value>Is Licensee Site</value>
+  </data>
 </root>

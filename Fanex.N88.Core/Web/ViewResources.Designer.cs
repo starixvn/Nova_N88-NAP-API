@@ -943,6 +943,15 @@ namespace Fanex.N88.Core.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Is Licensee Site.
+        /// </summary>
+        public static string IsLicenseeSite {
+            get {
+                return ResourceManager.GetString("IsLicenseeSite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Key.
         /// </summary>
         public static string Key {

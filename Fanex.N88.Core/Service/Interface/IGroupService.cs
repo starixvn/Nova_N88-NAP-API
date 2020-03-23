@@ -16,7 +16,7 @@
 
         IGroup GetByName(string name, bool isLicenseeGroup = true, int? siteId = null);
 
-        IEnumerable<IGroup> GetAll(bool? isActive = null, bool isLicenseeGroup = true, int? siteId = null);
+        IEnumerable<IGroup> GetAll(bool? isActive = null, bool? isLicenseeGroup = null, int? siteId = null);
 
         /// <summary>
         /// Searches group by group name,site, but excludes ones who was assigned
