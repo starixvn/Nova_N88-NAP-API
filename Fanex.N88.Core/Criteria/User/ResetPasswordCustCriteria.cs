@@ -10,7 +10,7 @@ namespace Fanex.N88.Core.Criteria.User
     /// </summary>
     public class ResetPasswordCustCriteria : CriteriaBase
     {
-        public int CustId { get; set; }
+        public int UserId { get; set; }
 
         [SpParam(Ignored = true)]
         public string Username { get; set; }
@@ -51,7 +51,7 @@ namespace Fanex.N88.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "N88_Cust_UpdatePassword";
+            return "N88_User_UpdatePassword";
         }
 
         /// <summary>

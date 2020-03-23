@@ -92,7 +92,7 @@
             using (var db = new ObjectDb(criteria.GetSettingKey()))
             {
                 db.ExecuteNonQuery(hash);
-                criteria.CustId = Convert.ToInt32(db.GetParameterValue("CustId"));
+                criteria.UserId = Convert.ToInt32(db.GetParameterValue("UserId"));
 
                 return this.GetCommandResult(hash);
             }

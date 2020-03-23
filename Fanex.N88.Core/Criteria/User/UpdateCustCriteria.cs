@@ -9,7 +9,7 @@ namespace Fanex.N88.Core.Criteria.User
     /// </summary>
     public class UpdateCustCriteria : CriteriaBase
     {
-        public int CustId { get; set; }
+        public int UserId { get; set; }
 
         [Display(Name = "First_Name", ResourceType = typeof(ViewResources))]
         [StringLength(50, MinimumLength = 0,
@@ -50,7 +50,7 @@ namespace Fanex.N88.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "N88_Cust_Update";
+            return "N88_User_Update";
         }
 
         /// <summary>

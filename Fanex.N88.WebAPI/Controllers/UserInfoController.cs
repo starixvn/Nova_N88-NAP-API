@@ -34,7 +34,7 @@
 
             var criteria = new UpdatePasswordCustCriteria
             {
-                CustId = userId,
+                UserId = userId,
                 UserPwd = password
             };
 
@@ -45,7 +45,7 @@
         [HttpPost]
         public bool UpdateProfile(int siteId, [FromBody]UpdateCustCriteria criteria)
         {
-            _userService.ServiceContext.UserId = criteria.CustId;
+            _userService.ServiceContext.UserId = criteria.UserId;
             _userService.ServiceContext.SiteId = siteId;
 
             var result = _userService.InsertOrUpdate(criteria);
