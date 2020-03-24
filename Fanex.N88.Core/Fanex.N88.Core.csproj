@@ -221,7 +221,7 @@
     <Compile Include="Criteria\User\GetAllByUsernameGroupSiteUserCriteria.cs" />
     <Compile Include="Criteria\User\SearchUserExcludeFunctionCriteria.cs" />
     <Compile Include="Criteria\User\GetUserSiteFunctionKeyPolicyUserCriteria.cs" />
-    <Compile Include="Criteria\User\ResetPasswordCustCriteria.cs" />
+    <Compile Include="Criteria\User\ResetUserPasswordCriteria.cs" />
     <Compile Include="Criteria\User\GetByFunctionAndSiteUserCriteria.cs" />
     <Compile Include="Criteria\User\UpdateUserPasswordCriteria.cs" />
     <Compile Include="Criteria\User\UpdateUserCriteria.cs" />
