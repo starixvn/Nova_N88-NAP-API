@@ -118,6 +118,6 @@
     <Setting Key="N88_User_SSOGetTime" SpName="N88_User_SSOGetTime" DbName="DBN88POL.N88_UserControl.bodbPolicyNetView" />
   </Function>
   <Function Name="LogUserLogin">
-    <Setting Key="N88_LogUserLogin_Insert" SpName="N88_LogUserLogin_Insert" DbName="DBNAP.bodb_N88LOG.bodbAdminNet" />
+    <Setting Key="N88_LogUserLogin_Insert" SpName="N88_LogUserLogin_Insert" DbName="DBN88.bodb_N88LOG.bodbAdminNet" />
   </Function>
 </Functions>
