@@ -5,9 +5,9 @@ namespace Fanex.N88.Core.Criteria.User
     using Fanex.N88.Core.Web;
 
     /// <summary>
-    /// Insert new customer criteria.
+    /// Update customer criteria.
     /// </summary>
-    public class InsertCustCriteria : CriteriaBase
+    public class UpdateUserCriteria : CriteriaBase
     {
         public int UserId { get; set; }
 
@@ -29,36 +29,20 @@ namespace Fanex.N88.Core.Criteria.User
             ErrorMessageResourceType = typeof(ViewResources))]
         public string Email { get; set; }
 
-        [Required]
-        [Display(Name = "Username", ResourceType = typeof(ViewResources))]
-        [StringLength(50, MinimumLength = 2,
-            ErrorMessageResourceName = "InputLengthValidationMsg",
-            ErrorMessageResourceType = typeof(ViewResources))]
-        [RegularExpression(@"^[\w\s]{1,}$",
-            ErrorMessageResourceName = "InvalidNameValidationMsg",
-            ErrorMessageResourceType = typeof(ViewResources))]
-        public string Username { get; set; }
-
-        [Required]
-        [Display(Name = "Password", ResourceType = typeof(ViewResources))]
-        [StringLength(50, MinimumLength = 2,
-            ErrorMessageResourceName = "InputLengthValidationMsg",
-            ErrorMessageResourceType = typeof(ViewResources))]
-        [DataType(DataType.Password)]
-        public string UserPwd { get; set; }
-
         [Display(Name = "Group", ResourceType = typeof(ViewResources))]
         public int GroupId { get; set; }
 
-        public bool IsLicenseeUser { get; set; }
+        [SpParam(Ignored = true)]
+        public string Username { get; set; }
 
+        [SpParam(Ignored = true)]
         public int SiteId { get; set; }
 
         [SpParam(Ignored = true)]
         public int PageIndex { get; set; }
 
         [SpParam(Ignored = true)]
-        public int RerturnGroupId { get; set; }
+        public int ReturnGroupId { get; set; }
 
         /// <summary>
         /// Get setting key.
@@ -66,7 +50,7 @@ namespace Fanex.N88.Core.Criteria.User
         /// <returns>Setting key.</returns>
         public override string GetSettingKey()
         {
-            return "N88_User_Insert";
+            return "N88_User_Update";
         }
 
         /// <summary>

@@ -82,7 +82,7 @@
         /// <param name="criteria">The criteria.</param>
         /// <param name="logCriteria">The log criteria.</param>
         /// <returns>Command result.</returns>
-        public ICommandResult Insert(InsertCustCriteria criteria, ICriteria logCriteria)
+        public ICommandResult Insert(InsertUserCriteria criteria, ICriteria logCriteria)
         {
             Hashtable hash = criteria.GetSpParams();
 

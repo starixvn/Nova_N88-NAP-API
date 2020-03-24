@@ -254,7 +254,7 @@
         /// </summary>
         /// <param name="criteria">The criteria.</param>
         /// <returns>The command result.</returns>
-        public ICommandResult Insert(InsertCustCriteria criteria)
+        public ICommandResult Insert(InsertUserCriteria criteria)
         {
             Check.Argument.IsNotNull(criteria, "criteria");
 

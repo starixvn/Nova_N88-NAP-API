@@ -223,10 +223,10 @@
     <Compile Include="Criteria\User\GetUserSiteFunctionKeyPolicyUserCriteria.cs" />
     <Compile Include="Criteria\User\ResetPasswordCustCriteria.cs" />
     <Compile Include="Criteria\User\GetByFunctionAndSiteUserCriteria.cs" />
-    <Compile Include="Criteria\User\UpdatePasswordCustCriteria.cs" />
-    <Compile Include="Criteria\User\UpdateCustCriteria.cs" />
-    <Compile Include="Criteria\User\InsertCustCriteria.cs" />
+    <Compile Include="Criteria\User\UpdateUserPasswordCriteria.cs" />
+    <Compile Include="Criteria\User\UpdateUserCriteria.cs" />
     <Compile Include="Criteria\User\InsertUserCriteria.cs" />
+    <Compile Include="Criteria\User\AddUserToGroupCriteria.cs" />
     <Compile Include="Criteria\User\SearchByUsernameUserCriteria.cs" />
     <Compile Include="Criteria\User\GetUserFunctionPolicyUserCriteria.cs" />
     <Compile Include="Criteria\User\UserSSOCheckInUserCriteria.cs" />

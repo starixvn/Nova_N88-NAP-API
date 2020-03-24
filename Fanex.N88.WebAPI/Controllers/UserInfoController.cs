@@ -32,7 +32,7 @@
             _userService.ServiceContext.UserId = userId;
             _userService.ServiceContext.SiteId = siteId;
 
-            var criteria = new UpdatePasswordCustCriteria
+            var criteria = new UpdateUserPasswordCriteria
             {
                 UserId = userId,
                 UserPwd = password
@@ -43,7 +43,7 @@
         }
 
         [HttpPost]
-        public bool UpdateProfile(int siteId, [FromBody]UpdateCustCriteria criteria)
+        public bool UpdateProfile(int siteId, [FromBody]UpdateUserCriteria criteria)
         {
             _userService.ServiceContext.UserId = criteria.UserId;
             _userService.ServiceContext.SiteId = siteId;

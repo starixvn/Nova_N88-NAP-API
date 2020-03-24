@@ -58,7 +58,7 @@
 
         ICommandResult Insert(IUser user);
 
-        ICommandResult Insert(InsertCustCriteria criteria);
+        ICommandResult Insert(InsertUserCriteria criteria);
 
         ICommandResult Update(int userId, string email, string displayName);
 

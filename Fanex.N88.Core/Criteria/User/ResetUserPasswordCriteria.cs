@@ -6,22 +6,14 @@ namespace Fanex.N88.Core.Criteria.User
     using Fanex.N88.Core.Web;
 
     /// <summary>
-    /// Update customer password criteria.
+    /// Reset customer password criteria.
     /// </summary>
-    public class UpdatePasswordCustCriteria : CriteriaBase
+    public class ResetUserPasswordCriteria : CriteriaBase
     {
         public int UserId { get; set; }
 
         [SpParam(Ignored = true)]
         public string Username { get; set; }
-
-        [Required]
-        [Display(Name = "Old_Password", ResourceType = typeof(ViewResources))]
-        [StringLength(50, MinimumLength = 2,
-            ErrorMessageResourceName = "InputLengthValidationMsg",
-            ErrorMessageResourceType = typeof(ViewResources))]
-        [SpParam(Ignored = true)]
-        public string OldUserPwd { get; set; }
 
         [Required]
         [Display(Name = "New_Password", ResourceType = typeof(ViewResources))]
@@ -35,11 +27,20 @@ namespace Fanex.N88.Core.Criteria.User
         [StringLength(50, MinimumLength = 2,
             ErrorMessageResourceName = "InputLengthValidationMsg",
             ErrorMessageResourceType = typeof(ViewResources))]
-        [SpParam(Ignored = true)]
         [Compare("UserPwd",
             ErrorMessageResourceName = "PropertiesMustMatchErrMsg",
             ErrorMessageResourceType = typeof(ViewResources))]
+        [SpParam(Ignored = true)]
         public string ConfirmUserPwd { get; set; }
+
+        [SpParam(Ignored = true)]
+        public int SiteId { get; set; }
+
+        [SpParam(Ignored = true)]
+        public int PageIndex { get; set; }
+
+        [SpParam(Ignored = true)]
+        public int ReturnGroupId { get; set; }
 
         [SpParam(Ignored = true)]
         public string Token { get; set; }
