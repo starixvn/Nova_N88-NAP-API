@@ -275,7 +275,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Web.ConnectionString.n88.config" />
-    <Content Include="Web.n88.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fanex.N88.Core\Fanex.N88.Core.csproj">
