@@ -85,7 +85,7 @@
         {
             var functionPolicies = _functionService.GetByUserAndSiteIncludeGroup(userId, siteId, environment);
 
-            if (!string.IsNullOrEmpty(parentFunctionKey))
+            if (string.IsNullOrEmpty(parentFunctionKey))
             {
                 return functionPolicies;
             }
