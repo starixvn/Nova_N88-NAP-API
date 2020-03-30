@@ -113,7 +113,8 @@
                                 Parent = reader.IsDBNull("ParentId") ? null : new Function
                                 {
                                     Id = reader.ToShort("ParentId"),
-                                    Name = reader.ToString("ParentName")
+                                    Name = reader.ToString("ParentName"),
+                                    Key = reader.ToString("ParentKey")
                                 }
                             },
                             Site = new Site

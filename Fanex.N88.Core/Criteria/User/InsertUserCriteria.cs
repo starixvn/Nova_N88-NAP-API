@@ -31,7 +31,7 @@ namespace Fanex.N88.Core.Criteria.User
 
         [Required]
         [Display(Name = "Username", ResourceType = typeof(ViewResources))]
-        [StringLength(50, MinimumLength = 2,
+        [StringLength(50, MinimumLength = 1,
             ErrorMessageResourceName = "InputLengthValidationMsg",
             ErrorMessageResourceType = typeof(ViewResources))]
         [RegularExpression(@"^[\w\s]{1,}$",

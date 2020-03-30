@@ -85,12 +85,10 @@
         {
             var functionPolicies = _functionService.GetByUserAndSiteIncludeGroup(userId, siteId, environment);
 
-            if (string.IsNullOrEmpty(parentFunctionKey))
+            if (!string.IsNullOrEmpty(parentFunctionKey))
             {
                 return functionPolicies;
             }
-
-            AssignParentFunctionKey(functionPolicies);
 
             return functionPolicies.Where(f => f.Function.Parent?.Key == parentFunctionKey);
         }
@@ -101,19 +99,6 @@
             var function = _functionService.GetByKeyAndSite(functionKey, siteId);
 
             return _userService.GetByFunctionAndSite(function.Id, siteId);
-        }
-
-        private void AssignParentFunctionKey(IEnumerable<FunctionPolicy> functionPolicies)
-        {
-            foreach (var functionPolicy in functionPolicies)
-            {
-                var parentFunction = functionPolicy.Function.Parent;
-
-                if (parentFunction != null)
-                {
-                    parentFunction.Key = _functionService.GetById(parentFunction.Id)?.Key;
-                }
-            }
         }
     }
 }
