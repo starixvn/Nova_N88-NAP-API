@@ -39,6 +39,10 @@
         [Display(Name = "Email", ResourceType = typeof(ViewResources))]
         string Email { get; set; }
 
+        int DefaultBaseCurrencyId { get; set; }
+
+        string DefaultBaseCurrencyCode { get; set; }
+
         bool IsLicenseeUser { get; set; }
 
         int SourceSiteId { get; set; }
