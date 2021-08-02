@@ -45,6 +45,8 @@
 
         bool IsLicenseeUser { get; set; }
 
+        int DataRangeLimitation { get; set; }
+
         int SourceSiteId { get; set; }
 
         bool Closed { get; set; }
