@@ -8,6 +8,7 @@
     using System.Web.Http.Filters;
     using Data;
     using Extensions;
+    using Fanex.Logging;
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
     public sealed class GlobalExceptionFilterAttr : ExceptionFilterAttribute
@@ -29,8 +30,8 @@
                 LogDatabaseException(exception, messageBuilder);
 
                 actionExecutedContext.Response = actionExecutedContext.Request.CreateErrorResponse(HttpStatusCode.InternalServerError, messageBuilder.ToString());
+                LogService.Error(messageBuilder.ToString());
             }
-
             base.OnException(actionExecutedContext);
         }
 

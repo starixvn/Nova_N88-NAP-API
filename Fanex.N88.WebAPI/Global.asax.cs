@@ -1,13 +1,16 @@
 ﻿namespace Fanex.N88.WebAPI
 {
     using System;
+    using System.Configuration;
     using System.Data.SqlClient;
     using System.Web.Http;
     using System.Web.Mvc;
     using System.Web.Routing;
     using Fanex.Data.Configuration;
     using Fanex.Logging;
+    using Fanex.Logging.Sentry.RavenClient;
     using Newtonsoft.Json.Serialization;
+    using SharpRaven;
 
     // Note: For instructions on enabling IIS6 or IIS7 classic mode,
     // visit http://go.microsoft.com/?LinkId=9394801
@@ -15,6 +18,13 @@
     {
         protected void Application_Start()
         {
+            LogManager
+                .SetDefaultLogCategory(ConfigurationManager.AppSettings["Fanex.Logging-LogCategory"])
+                .Use(new SentryLogging(new SentryEngineOptions
+                {
+                    Dsn = new Dsn(ConfigurationManager.AppSettings["Sentry-Dsn"])
+                }));
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
