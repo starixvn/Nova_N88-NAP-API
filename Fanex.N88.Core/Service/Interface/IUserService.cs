@@ -25,6 +25,8 @@
 
         IEnumerable<UserPolicy> GetByFunctionAndSite(int functionId, int siteId = 0);
 
+        IEnumerable<Setting> GetUserSetting(int userId);
+
         IEnumerable<IUser> GetBySite(int siteId = 0, bool? isActive = null);
 
         IEnumerable<IUser> GetByGroupAndSite(int groupId = 0, int siteId = 0, bool? isActive = null);

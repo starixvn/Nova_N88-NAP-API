@@ -57,8 +57,6 @@
 
         public bool IsLicenseeUser { get; set; }
 
-        public int DataRangeLimitation { get; set; }
-
         public int SourceSiteId { get; set; }
     }
 }
