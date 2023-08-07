@@ -214,6 +214,7 @@
     <Compile Include="Criteria\User\AssignFunctionUserCriteria.cs" />
     <Compile Include="Criteria\User\AssignSiteUserCriteria.cs" />
     <Compile Include="Criteria\User\ChangeUserSiteStatusUserCriteria.cs" />
+    <Compile Include="Criteria\User\GetUserSettingCriteria.cs" />
     <Compile Include="Criteria\User\UpdateSiteToUserCriteria.cs" />
     <Compile Include="Criteria\User\GetAvailableSitesCriteria.cs" />
     <Compile Include="Criteria\User\UserSSOGetTimeUserCriteria.cs" />
@@ -248,6 +249,7 @@
     <Compile Include="Domain\ISite.cs" />
     <Compile Include="Domain\IUser.cs" />
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Model\ValueObject\Setting.cs" />
     <Compile Include="Properties\GlobalSuppressions.cs" />
     <Compile Include="Model\ValueObject\LogFunction.cs" />
     <Compile Include="Model\ValueObject\LogUserLogin.cs" />

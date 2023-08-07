@@ -94,6 +94,12 @@
         }
 
         [HttpGet]
+        public IEnumerable<Setting> Settings(int userId)
+        {
+            return _userService.GetUserSetting(userId);
+        }
+
+        [HttpGet]
         public IEnumerable<UserPolicy> UserPolicies(string functionKey, int siteId)
         {
             var function = _functionService.GetByKeyAndSite(functionKey, siteId);

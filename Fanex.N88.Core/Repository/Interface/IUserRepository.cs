@@ -23,6 +23,8 @@
 
         IEnumerable<UserPolicy> GetUserPolicy(ICriteria criteria);
 
+        IEnumerable<Setting> GetUserSetting(GetUserSettingCriteria criteria);
+
         ICommandResult Insert(InsertUserCriteria criteria, ICriteria logCriteria);
 
         ICommandResult Update(ICriteria criteria, ICriteria logCriteria);

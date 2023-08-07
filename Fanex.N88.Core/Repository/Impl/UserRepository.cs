@@ -397,6 +397,40 @@
             }
         }
 
+        public IEnumerable<Setting> GetUserSetting(GetUserSettingCriteria criteria)
+        {
+            using (var db = new ObjectDb(criteria.GetSettingKey()))
+            {
+                using (var reader = db.ExecuteReader(criteria.GetSpParams()))
+                {
+                    var userLevelList = new List<Setting>();
+
+                    while (reader.Read())
+                    {
+                        userLevelList.Add(new Setting
+                        {
+                            Key = reader.ToString("SettingKey"),
+                            Value = reader.ToString("SettingValue"),
+                            CreatedDate = reader.ToDateTime("CreatedDate"),
+                            ModifiedDate = reader.ToDateTime("ModifiedDate"),
+                            Creator = reader.IsDBNull("CreatorId") ? null : new User
+                            {
+                                Id = reader.ToInt("CreatorId"),
+                                Username = reader.ToString("CreatorUsername")
+                            },
+                            Modifier = reader.IsDBNull("ModifierId") ? null : new User
+                            {
+                                Id = reader.ToInt("ModifierId"),
+                                Username = reader.ToString("ModifierUsername")
+                            }
+                        });
+                    }
+
+                    return userLevelList;
+                }
+            }
+        }
+
         /// <summary>
         /// Get user list site function key.
         /// </summary>

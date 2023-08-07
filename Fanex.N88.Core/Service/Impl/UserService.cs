@@ -621,6 +621,21 @@
             return null;
         }
 
+        public IEnumerable<Setting> GetUserSetting(int userId)
+        {
+            var criteria = new GetUserSettingCriteria
+            {
+                UserId = userId
+            };
+
+            if (criteria.IsValid())
+            {
+                return this._userRepository.GetUserSetting(criteria);
+            }
+
+            return Enumerable.Empty<Setting>();
+        }
+
         /// <summary>
         /// Get user list site function key policy.
         /// </summary>
