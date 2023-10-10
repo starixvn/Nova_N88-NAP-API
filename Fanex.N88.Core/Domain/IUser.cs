@@ -48,5 +48,7 @@
         int SourceSiteId { get; set; }
 
         bool Closed { get; set; }
+
+        int Level { get; set; }
     }
 }
