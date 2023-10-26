@@ -58,5 +58,7 @@
         public bool IsLicenseeUser { get; set; }
 
         public int SourceSiteId { get; set; }
+
+        public int Level { get; set; }
     }
 }
