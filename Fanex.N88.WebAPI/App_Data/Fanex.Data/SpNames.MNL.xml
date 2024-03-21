@@ -116,7 +116,7 @@
 			<Mapping DataField="ModifierUsername" ObjectProperty="Username" />
 		</Setting>
 		<Setting Key="NAP_User_SSOGetTime" SpName="NAP_User_SSOGetTime" DbName="DBPOL.NAP_UserControl.bodbPolicyNetView" />
-		<Setting Key="N88_Setting_GetByUser" SpName="N88_Setting_GetByUser" DbName="DBN88POL.N88_UserControl.bodbPolicyNetView" />
+		<Setting Key="N88_Setting_GetByUser" SpName="N88_Setting_GetByUser" DbName="DBN88POL.N88_UserControl.wsv_nap" />
 	</Function>
 	<Function Name="LogUserLogin">
 		<Setting Key="NAP_LogUserLogin_Insert" SpName="NAP_LogUserLogin_Insert_MNL" DbName="DBNAP.bodb_NAPLOG.bodbAdminNet" />
