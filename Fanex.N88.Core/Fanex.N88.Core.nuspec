@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package >
+<package>
   <metadata>
     <id>Fanex.N88.Core</id>
-    <version>1.7.1</version>
+    <version>1.7.4</version>
     <title>$title$</title>
     <authors>Oliver.Dang</authors>
     <owners>Oliver.Dang</owners>
@@ -18,4 +18,8 @@
     <copyright>Copyright 2020</copyright>
     <tags>Fanex N88 Core</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\Fanex.N88.Core.dll" target="lib\net40" />
+    <file src="bin\Release\Fanex.N88.Core.pdb" target="lib\net40" />
+  </files>
 </package>
