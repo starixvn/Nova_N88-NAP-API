@@ -262,7 +262,7 @@
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Web.ConnectionString.backupMNL.config">
+    <Content Include="Web.ConnectionString.Kldr.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
     </Content>
     <Content Include="Web.Pro.config">
@@ -275,6 +275,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.ConnectionString.n88.config" />
+    <Content Include="Web.Kldr.config">
+	  <DependentUpon>Web.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fanex.N88.Core\Fanex.N88.Core.csproj">
