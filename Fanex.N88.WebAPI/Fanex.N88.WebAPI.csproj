@@ -220,6 +220,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Data\Fanex.Data\SpNames.KLDR.xml" />
     <Content Include="App_Data\Fanex.Data\SpNames.MNL.xml" />
     <Content Include="App_Data\Fanex.Data\SpNames.xml" />
     <Content Include="Global.asax" />
@@ -276,7 +277,7 @@
     </Content>
     <Content Include="Web.ConnectionString.n88.config" />
     <Content Include="Web.Kldr.config">
-	  <DependentUpon>Web.config</DependentUpon>
+      <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
