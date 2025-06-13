@@ -8,6 +8,7 @@
     using Fanex.Common.Extensions;
     using Fanex.Data;
     using Fanex.Data.Repository;
+    using Fanex.Logging;
     using Fanex.N88.Core.Command;
     using Fanex.N88.Core.Criteria.Misc;
     using Fanex.N88.Core.Criteria.User;
@@ -124,13 +125,7 @@
         /// <param name="criteria">The criteria.</param>
         public void UserCheckIn(UserCheckInUserCriteria criteria)
         {
-            Hashtable hash = criteria.GetSpParams();
-
-            using (var objectDb = new ObjectDb(criteria.GetSettingKey()))
-            {
-                objectDb.ExecuteNonQuery(hash);
-                criteria.OnUserId = Convert.ToInt32(hash["onuserid"].ToString());
-            }
+            criteria.OnUserId = 999;
         }
 
         /// <summary>
