@@ -258,18 +258,8 @@
     <Content Include="Web.ConnectionString.Local.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
     </Content>
-    <Content Include="Web.ConnectionString.Pro.config">
+    <Content Include="Web.ConnectionString.Kldrpro.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.ConnectionString.Kldr.config">
-      <DependentUpon>Web.ConnectionString.config</DependentUpon>
-    </Content>
-	<Content Include="Web.ConnectionString.Kldrpro.config">
-      <DependentUpon>Web.ConnectionString.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Pro.config">
-      <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Sit.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -278,11 +268,8 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.ConnectionString.n88.config" />
-    <Content Include="Web.Kldr.config">
-	  <DependentUpon>Web.config</DependentUpon>
-    </Content>
-	    <Content Include="Web.Kldrpro.config">
-	  <DependentUpon>Web.config</DependentUpon>
+    <Content Include="Web.Kldrpro.config">
+      <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
