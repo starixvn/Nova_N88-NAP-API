@@ -258,15 +258,8 @@
     <Content Include="Web.ConnectionString.Local.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
     </Content>
-    <Content Include="Web.ConnectionString.Pro.config">
+    <Content Include="Web.ConnectionString.Kldrpro.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.ConnectionString.backupMNL.config">
-      <DependentUpon>Web.ConnectionString.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Pro.config">
-      <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Sit.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -275,6 +268,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.ConnectionString.n88.config" />
+    <Content Include="Web.Kldrpro.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fanex.N88.Core\Fanex.N88.Core.csproj">

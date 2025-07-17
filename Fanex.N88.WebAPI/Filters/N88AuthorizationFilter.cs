@@ -89,7 +89,6 @@
         private bool IsValidRequest(HttpRequestMessage req, string siteId, string incomingBase64Signature, string nonce, string requestTimeStamp)
         {
             string requestContentBase64String = string.Empty;
-            string requestUri = HttpUtility.UrlEncode(req.RequestUri.AbsoluteUri.ToLowerInvariant());
             string requestHttpMethod = req.Method.Method;
 
             var allowedApps = _cache.Get<ConcurrentDictionary<string, string>>(CacheKey);
@@ -124,7 +123,7 @@
                 requestContentBase64String = Convert.ToBase64String(hash);
             }
 
-            string data = string.Format("{0}{1}{2}{3}{4}{5}", siteId, requestHttpMethod, requestUri, requestTimeStamp, nonce, requestContentBase64String);
+            string data = string.Format("{0}{1}{2}{3}{4}", siteId, requestHttpMethod, requestTimeStamp, nonce, requestContentBase64String);
 
             var secretKeyBytes = Convert.FromBase64String(sharedKey);
 
