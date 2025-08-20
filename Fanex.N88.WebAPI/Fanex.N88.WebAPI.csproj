@@ -258,7 +258,7 @@
     <Content Include="Web.ConnectionString.Local.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
     </Content>
-    <Content Include="Web.ConnectionString.Kldrpro.config">
+    <Content Include="Web.ConnectionString.Pro.config">
       <DependentUpon>Web.ConnectionString.config</DependentUpon>
     </Content>
     <Content Include="Web.Sit.config">
@@ -268,7 +268,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.ConnectionString.n88.config" />
-    <Content Include="Web.Kldrpro.config">
+    <Content Include="Web.Pro.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
